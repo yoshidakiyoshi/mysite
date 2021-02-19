@@ -12,7 +12,7 @@ a{
 }
 .wrapper{
   max-width: 1100px;
-  margin: 0 auto;
+  margin:0 auto;
 }
  /*ヘッダー-----------------------------*/
 .headerInfo{
@@ -55,7 +55,7 @@ margin-right: 0.5rem;
 }
 .top-jpg{
   object-fit: cover;
-  margin: 30px;
+  margin-right:30px ;
   max-width: 100%;
   height: auto;  
 }
@@ -225,7 +225,7 @@ textarea{
   padding: 6px 12px;
   margin: 5px;
 }
-/*features-section-----------------------------*/
+/*FEATURES-----------------------------*/
 .features-section{
   margin-top: 90px;
 }
@@ -272,7 +272,8 @@ textarea{
   margin-top: 30px;
   margin-left: 10px;
 }
-/*performance-content-----------------------------*/
+/*PERFORMANCE-----------------------------*/
+
 /*大きい実績*/
 .performance-content{
   border-top: 12px solid #eeedea;
@@ -290,7 +291,6 @@ textarea{
 }
 
 .performance-menu img{
-  margin: 0 40px;
   box-shadow: 0 10px 10px 0 rgba(201, 188, 188, 0.637);
 }
 .performance-menu-text{
@@ -300,6 +300,13 @@ textarea{
   text-align: left;
   padding-top: 20px;
   padding-left: 10px;
+}
+.monotukuri-text,
+.aisei-text{
+  margin-left: 40px;
+}
+.sb-text{
+  margin-right: 40px;
 }
 .performance-title{
   font-size: 1.5rem;
@@ -344,10 +351,7 @@ textarea{
   width: 100%;
   margin-top:30px;
 }
-.sb{
-  margin-left:40px ;
-  
-}
+
 .sb-text,
 .aisei-text{
   margin-top: 70px;
@@ -355,12 +359,14 @@ textarea{
 }
 /*小さい実績*/
 #grid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr) ;
+ display: grid; 
+ grid-template-columns: repeat(2,1fr);
 }
 .mini-text{
   padding-top: 10px;
-  margin-left: -10px;
+  margin: 0 20px 0 25px;
+  min-width: 250px;
+  
 }
 
 .mini-title{
