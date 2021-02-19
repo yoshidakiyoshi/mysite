@@ -273,6 +273,7 @@ textarea{
   margin-left: 10px;
 }
 /*performance-content-----------------------------*/
+/*大きい実績*/
 .performance-content{
   border-top: 12px solid #eeedea;
 }
@@ -290,13 +291,13 @@ textarea{
 
 .performance-menu img{
   margin: 0 40px;
+  box-shadow: 0 10px 10px 0 rgba(201, 188, 188, 0.637);
 }
 .performance-menu-text{
   max-width: 300px;
   min-width: 300px;
   list-style-position: inside;
   text-align: left;
-  border: 1px solid red;
   padding-top: 20px;
   padding-left: 10px;
 }
@@ -320,15 +321,13 @@ textarea{
   font-size: 0.875rem;
   margin-bottom: 10px;
 }
-.project-title,
-.client-title{
+.project-title{
   font-weight: bold;
 }
 .project a{
   text-decoration:underline;
 }
 .project-name,
-.client-name,
 .performance-menu a{
   width: 190px;
   max-width: 190px;
@@ -347,10 +346,38 @@ textarea{
 }
 .sb{
   margin-left:40px ;
+  
+}
+.sb-text,
+.aisei-text{
+  margin-top: 70px;
+  height: 400px;
+}
+/*小さい実績*/
+#grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+}
+.mini-text{
+  padding-top: 10px;
+  margin-left: -10px;
 }
 
-
-
-
-
-
+.mini-title{
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.mini-subtitle{
+  font-size: 1.2rem;
+}
+.mini-project,
+.mini-client{
+  font-size: 0.75rem;
+  justify-content:start;  
+}
+.mini-p-name{
+  margin-left: 15px;
+}
+.mini-c-name{
+  margin-left: 25px;
+}
