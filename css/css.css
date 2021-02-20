@@ -365,10 +365,8 @@ textarea{
 .mini-text{
   padding-top: 10px;
   margin: 0 20px 0 25px;
-  min-width: 250px;
-  
+  min-width: 250px;  
 }
-
 .mini-title{
   font-size: 1rem;
   margin-bottom: 15px;
@@ -386,4 +384,102 @@ textarea{
 }
 .mini-c-name{
   margin-left: 25px;
+}
+/*PERFORMANCE-ANNOUNCE*/
+.performance-announce{
+  background: #272727;
+}
+.performance-announce .wrapper{
+  display: flex; 
+}
+.performance-announce .bottun-img{
+ mix-blend-mode: difference;
+ opacity: 0.8;
+}
+.announce-text{
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 20px;
+  border-right: 10px solid #eeedea; 
+}
+.announce-text h2{
+  font-weight: bold;
+  font-family: Quicksand,sans-serif;
+  color: #ff9600;
+  letter-spacing: .1rem;
+}
+.announce-text p{
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  width: 450px;
+  margin-top: 20px;
+  line-height: 1.25;
+}
+.announce-bottun-content{
+  margin-left: -40px;
+  margin-top: 30px;
+}
+.announce-bottun{
+  background-color: #fff;
+  color: #272727;  
+  padding: 11px 110px;
+}
+.announce-bottun:hover{
+  background-color: #fff;
+  padding:10.5px 105px ;
+  font-size:.95rem ;
+  opacity: 1;
+}
+.announce-bottun span{
+  color: #fff;
+}
+.kiritori{
+  border-right: 20px solid #eeedea;
+}
+/*QUESTION-----------------------------*/
+.question-section{
+  margin: 0 auto;
+}
+.question-section h1{
+  text-align: center;
+  margin-top: 80px;
+}
+#container{
+  width: 880px;
+  padding-left: 90px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: 100px 50px;
+  grid-template-columns: 150px 1fr;
+}
+#itemA{
+  grid-row: 1/3;
+  grid-column: 1;
+  margin-left: 90px;
+}
+#itemB{
+  margin-top: 10px;
+  font-size: 1.25rem; 
+  height: 30px;
+  grid-row: 1;
+  grid-column: 2;
+}
+#itemC{
+  height: 115px;
+  padding: 19px;
+  margin-top: -35px; 
+  grid-row: 2;
+  grid-column: 2;
+  background-color:#eeedea ;
+}
+#itemC h3{
+  font-size: 1.1rem;
+}
+#itemC p{
+  font-size: 0.98rem;
+  margin-top: 10px;
+  line-height: 1.3;
 }
