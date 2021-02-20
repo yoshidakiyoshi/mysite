@@ -27,18 +27,28 @@ a{
   align-items:flex-end;
   padding-top: 30px;
   padding-left: 30px; 
+  position: relative;
 }
 .logo{
   width: 170px;
   height: 23px;
   margin-right: 1rem;
 }
-.subTitle{
+.subTitle{  
   font-size: 0.825rem;
-  letter-spacing: 0.12rem;   
+  letter-spacing: 0.12rem;
+  white-space: nowrap;
+  position: absolute;
+  left: 240px;  
+
 }
 .dash {
 margin-right: 0.5rem;
+margin-top: 10px;
+width: 28px;
+position: absolute;
+top: 28px;
+left: 210px;
 }
 .headerRight{
   width: 350px;
