@@ -199,7 +199,7 @@ textarea{
   height: 245px;  
   border-top: 12px solid #eeedea;
   border-bottom: 12px solid #eeedea;
-  background-color: #ffa800;
+  background-color: #ffA800;
 }
 .nav-content .wrapper{
   display: flex; 
@@ -492,4 +492,36 @@ textarea{
   font-size: 0.98rem;
   margin-top: 10px;
   line-height: 1.3;
+}
+.request-nav{
+  height: 240px;
+  background-color: #ff9600;
+}
+.request-nav .nav-icon{
+  margin-left: 50px;
+}
+.request-nav .nav-p{
+  font-size: 1.25rem;
+  line-height: initial;
+  text-align: center;
+  color: #ff9600;
+  top: 50px;
+  left: 20px;
+}
+.request-flow{
+  margin-left: 10px;
+}
+.request-flow h3{
+  color: #fff;
+  
+}
+.request-flow p{
+  font-size: 0.93rem;
+  color: #fff;
+  width: 200px;
+}
+.request-flex{
+  display: flex;
+  margin-top: 70px;
+  margin-left: 30px;
 }
