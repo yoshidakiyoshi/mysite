@@ -447,6 +447,7 @@ textarea{
 }
 .kiritori{
   border-right: 20px solid #eeedea;
+  
 }
 /*QUESTION-----------------------------*/
 .question-section{
@@ -493,8 +494,9 @@ textarea{
   margin-top: 10px;
   line-height: 1.3;
 }
+/*お問い合わせナビ----------------------*/
 .request-nav{
-  height: 240px;
+  height: 265px;
   background-color: #ff9600;
 }
 .request-nav .nav-icon{
@@ -524,4 +526,33 @@ textarea{
   display: flex;
   margin-top: 70px;
   margin-left: 30px;
+}
+/*お問い合わせ----------------------*/
+.request-content{
+  text-align: center;
+  margin-top: 70px;
+}
+.request-content h1{
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.request-content p{
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.request-content img{
+  width: 120px;
+  margin-bottom: 15px;
+}
+.request-amall{
+  font-size: .5rem;
+}
+/*リクエストコンテンツ　コンタクト部分*/
+.request-content .radio_button{
+  text-align: initial;
+}
+.request-content .contact_info,
+.request-content .question_info{
+  margin: 0 auto;
 }
