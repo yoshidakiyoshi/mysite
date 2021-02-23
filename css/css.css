@@ -406,9 +406,9 @@ textarea{
   background: #272727;
 }
 .performance-announce .wrapper{
-  display: flex; 
-  flex-wrap:;
+  display: flex;
 }
+
 .performance-announce .bottun-img{
  mix-blend-mode: difference;
  opacity: 0.8;
@@ -583,4 +583,20 @@ textarea{
 .request-content textarea{
   width: 430px;
   margin-left: 20px;
+}
+
+/*tel-section*/
+
+.tel-section{
+  text-align: center;
+  margin-top:100px;
+  display: flex;
+}
+.tel-box{
+  display: flex;
+}
+.tel-label label,
+.tel-span span{
+  display: block;
+  text-align: left;
 }
