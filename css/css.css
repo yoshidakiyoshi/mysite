@@ -12,6 +12,7 @@ a{
 }
 .wrapper{
   max-width: 1100px;
+  min-width: 1100px;
   margin:0 auto;
 }
  /*ヘッダー-----------------------------*/
@@ -408,11 +409,6 @@ textarea{
 .performance-announce .wrapper{
   display: flex;
 }
-
-.performance-announce .bottun-img{
- mix-blend-mode: difference;
- opacity: 0.8;
-}
 .announce-text{
   text-transform: uppercase;
   padding-top: 60px;
@@ -434,6 +430,14 @@ textarea{
   margin-top: 20px;
   line-height: 1.25;
 }
+.kiritori{
+  border-right: 20px solid #eeedea;  
+}
+/*アナウンス　ボタン*/
+.performance-announce .bottun-img{
+  mix-blend-mode: difference;
+  opacity: 0.8;
+ }
 .announce-bottun-content{
   margin-left: -40px;
   margin-top: 30px;
@@ -452,10 +456,7 @@ textarea{
 .announce-bottun span{
   color: #fff;
 }
-.kiritori{
-  border-right: 20px solid #eeedea;
-  
-}
+
 /*QUESTION-----------------------------*/
 .question-section{
   margin: 0 auto;
@@ -585,18 +586,115 @@ textarea{
   margin-left: 20px;
 }
 
-/*tel-section*/
+/*TEL-SECTION-----------------------*/
 
 .tel-section{
-  text-align: center;
+  text-align: left;
   margin-top:100px;
+  margin-bottom: 80px;
+  padding-left:285px ;
   display: flex;
+}
+.tel-section img{
+  width: 125px;
+}
+.tel-text{
+  margin-left: 25px;
+}
+.tel-text h3{
+  letter-spacing: 2.25px;
+  margin-bottom: 5px;
+}
+.tel-text p{
+  font-size: 2.25rem;
+  font-family: Quicksand,sans-serif;
+  color: #ff9600;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 .tel-box{
   display: flex;
+  
 }
 .tel-label label,
 .tel-span span{
   display: block;
   text-align: left;
+  margin-bottom: 5px;
+  font-size: .9rem;
+}
+.tel-span{
+  margin-left: 20px;
+  color: #989898;
+}
+/*フッター----------------------*/
+
+footer{
+  height: 270px;
+  background:#eeedea ; 
+}
+.footer-logo{
+  padding-top: 75px;  
+  margin-left:30px;
+}
+footer .flex{
+  display: flex;
+  justify-content: center;
+}
+footer .bottun-content{
+  margin-top: 10px;
+}
+footer img{
+  width: 170px;
+}
+footer .bottun{  
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: normal;
+  background-color: #fff;
+  padding: 8.5px 47px;
+  box-shadow:0 5px 5px 0 rgba(0,0,0,.2)
+}
+footer .bottun:hover{
+  font-size: 0.75rem;
+  padding: 8px 46px;
+}
+footer .bottun-img{
+  width: 25px;
+  mix-blend-mode: difference;
+  opacity: 0.3;
+  top: 7px;
+ }
+footer .bottun span{
+  color: #fff;
+  top: 7px;
+  right: 18px;
+}
+.footer-text{
+  margin-top: 75px;
+  margin-left: 105px;
+  display: flex;
+}
+.footer-list{
+  list-style: none;
+  font-size: .8rem;
+}
+.label-list li,
+.co-list li{
+  margin-bottom: 3px;
+  letter-spacing: 2px;
+}
+.label-list{
+  font-weight: bold;
+}
+.co-list{
+  margin-left:20px ;
+}
+.copyright{
+  font-size: 0.7rem;
+  color: #adadad;
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
 }
