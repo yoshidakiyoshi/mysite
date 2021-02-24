@@ -11,8 +11,8 @@ a{
   text-decoration: none;
 }
 .wrapper{
-  max-width: 1100px;
-  min-width: 1100px;
+  max-width: 1040px;
+  min-width: 1040px;
   margin:0 auto;
 }
  /*ヘッダー-----------------------------*/
@@ -52,11 +52,16 @@ top: 28px;
 left: 210px;
 }
 .headerRight{
-  width: 350px;
-  height: 90px;
   position: absolute;
   top: 0;
   right: 20px;
+  border: 1px solid red;
+}
+.headerRight img{
+  
+  width: 350px;
+  height: 90px;
+  
 }
 /*top-------------------------------------*/
 
@@ -134,10 +139,11 @@ label{
   font-weight: bold;
   font-size: 0.875rem;
 }
-.radio_button span,
+
+.radio_button label,
 input::placeholder,
 textarea::placeholder{
-  font-size:0.875rem ;
+  font-size:0.875rem ;  
 }
 textarea::placeholder{
   max-width: 400px;
@@ -146,6 +152,9 @@ textarea::placeholder{
 .contact label{
   font-weight: bold;
   letter-spacing: 0.1rem;
+}
+.radio_button label{
+  font-weight: normal;
 }
 .contact_info label,
 .contact_info span{
@@ -683,7 +692,7 @@ footer .bottun span{
 .label-list li,
 .co-list li{
   margin-bottom: 3px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .label-list{
   font-weight: bold;

@@ -19,7 +19,7 @@
       <img class="dash" src="img/dash.png">
       <p class="subTitle">東京のWeb制作会社をお探しならビーワークス</p>
     </div>    <!-- headerLeft -->
-      <img class="headerRight" src="img/tshape.png" alt="BEEWORKS">
+      <div class="headerRight" ><img src="img/tshape.png" alt="BEEWORKS"></div>
     </header><!-- headerInfo -->
 
 <div class="top wrapper">
@@ -78,16 +78,17 @@
         <label for="">お問い合わせ内容</label>
         <div class="radio_button">
           <div>
-          <input type="radio" id="" name="">
-          <span class="butto">詳細な実績紹介を受けたい</span></div>
-          <div>
-            <input type="radio" id="" name="">
-            <span>具体的な案件の相談をしたい</span>
+           <input type="radio" id="shousai" name="radio_button" checked="checked">
+           <label for="shousai">詳細な実績紹介を受けたい</label>
           </div>
-            <div>
-          <input type="radio" id="" name="">
-          <span>その他</span>
-        </div>
+          <div>
+            <input type="radio" id="gutaiteki" name="radio_button">
+            <label for="gutaiteki">具体的な案件の相談をしたい</label>
+          </div>
+          <div>
+           <input type="radio" id="sonota" name="radio_button">
+           <label for="sonota">その他</label>           
+         </div>
         </div><!-- /radio_button -->
       </div> <!-- /secondary -->
 
@@ -456,16 +457,16 @@
         <label for="">お問い合わせ内容</label>
         <div class="radio_button">
           <div>
-           <input type="radio" id="" name="">
-           <span class="butto">詳細な実績紹介を受けたい</span>
+           <input type="radio" id="shousai" name="radio_button" checked="checked">
+           <label for="shousai" >詳細な実績紹介を受けたい</label>
           </div>
           <div>
-            <input type="radio" id="" name="">
-            <span>具体的な案件の相談をしたい</span>
+            <input type="radio" id="gutaiteki" name="radio_button">
+            <label for="gutaiteki">具体的な案件の相談をしたい</label>
           </div>
           <div>
-           <input type="radio" id="" name="">
-           <span>その他</span>
+           <input type="radio" id="sonota" name="radio_button">
+           <label for="sonota">その他</label>
          </div>
         </div><!-- /radio_button -->
       </div> <!-- /secondary -->
@@ -502,6 +503,7 @@
     </div><!-- tel-box -->    
   </div><!-- tel-text -->
 </div><!-- tel-section -->
+
 
 <footer>
   <div class="wrapper">
