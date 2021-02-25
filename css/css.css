@@ -167,12 +167,12 @@ textarea{
   padding: 1rem; 
 }
 /*ボタン*/
-.bottun-content{
+.button-content{
   margin-top: 40px;
   text-align: center;
   margin-bottom: 70px;
 }
-.bottun{
+.button{
   font-weight: bold;
   background-color: black;
   color: #fff;  
@@ -181,18 +181,18 @@ textarea{
   position: relative;
   transition:all 0.1s;
 }
-.bottun:hover{
+.button:hover{
   padding:10.5px 240px ;
   font-size:.95rem ;
   opacity: 0.8;
 }
-.bottun span{
+.button span{
   color: black;
   position: absolute;
   right: 20px;
   z-index: 2;
 }
-.bottun-img{
+.button-img{
   width: 30px;
   position: absolute;
   right: 10px;
@@ -208,7 +208,7 @@ textarea{
 }
 .nav-content .wrapper{
   display: flex; 
-  align-items: center;  
+  align-items: center;
 }
 .nav-icon{  
   position: relative;
@@ -244,10 +244,10 @@ textarea{
 .features-section{
   margin-top: 90px;
 }
-.features-section .bottun-img{
+.features-section .button-img{
   transform: rotate(90deg);  
 }
-.features-section .bottun span{
+.features-section .button span{
   transform: rotate(90deg);
 }
 .section-title{
@@ -404,15 +404,19 @@ textarea{
 .performance-announce{
   height: 330px;
   background: #272727;
-  background-image: url(../img/image-kiritori.jpg);
-  background-repeat: no-repeat;
-  background-position-x: 25%;
+  white-space: nowrap;
+}
+.performance-announce .wrapper{
+  max-width: 100%;
 }
 .announce-text{
+  width: 50%;
+  min-width: 500px;
   text-transform: uppercase;
   padding-top: 60px;
   padding-left: 15px;
   padding-right: 20px;
+  float: left;  
 }
 .announce-text h2{
   font-weight: bold;
@@ -428,31 +432,38 @@ textarea{
   margin-top: 20px;
   line-height: 1.25;
 }
+.an-img{
+  height: 330px;
+  width: 50%;
+  background-image: url(../img/image-kiritori.jpg);
+  float: right;
+}
 
 /*アナウンス　ボタン*/
-.performance-announce .bottun-img{
+.performance-announce .button-img{
   mix-blend-mode: difference;
   opacity: 0.8;
  }
-.announce-bottun-content{
-  margin-left: -580px;
+.announce-button-content{
+  width:500px ;
   margin-top: 30px;
-  text-align: center;
 }
-.announce-bottun{
+.announce-button{
   background-color: #fff;
   color: #272727;  
-  padding: 11px 110px;
+  padding: 11px 120px;
+  margin-left: -65px;
 }
-.announce-bottun:hover{
+.announce-button:hover{
   background-color: #fff;
-  padding:10.5px 105px ;
+  padding:10.5px 120px ;
   font-size:.95rem ;
   opacity: 1;
 }
-.announce-bottun span{
+.announce-button span{
   color: #fff;
 }
+
 
 /*QUESTION-----------------------------*/
 .question-section{
@@ -504,6 +515,9 @@ textarea{
   height: 265px;
   background-color: #ff9600;
 }
+.request-nav .wrapper{
+  margin-left: 70px;
+}
 .request-nav .nav-icon{
   margin-left: 50px;
 }
@@ -534,6 +548,12 @@ textarea{
   line-height: 1.4;
   color: #fff;
   width: 200px;
+}
+.item2{
+  margin-left: -15px;
+}
+.item3{
+  margin-left:-3px ;
 }
 
 /*お問い合わせ----------------------*/
@@ -643,13 +663,13 @@ footer .flex{
   display: flex;
   justify-content: center;
 }
-footer .bottun-content{
+footer .button-content{
   margin-top: 10px;
 }
 footer img{
   width: 170px;
 }
-footer .bottun{  
+footer .button{  
   font-size: 0.8rem;
   color: #000;
   font-weight: normal;
@@ -657,17 +677,17 @@ footer .bottun{
   padding: 8.5px 47px;
   box-shadow:0 5px 5px 0 rgba(0,0,0,.2)
 }
-footer .bottun:hover{
+footer .button:hover{
   font-size: 0.75rem;
   padding: 8px 46px;
 }
-footer .bottun-img{
+footer .button-img{
   width: 25px;
   mix-blend-mode: difference;
   opacity: 0.3;
   top: 7px;
  }
-footer .bottun span{
+footer .button span{
   color: #fff;
   top: 7px;
   right: 18px;
