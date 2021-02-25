@@ -9,8 +9,9 @@ body{
 a{
   text-decoration: none;
 }
-.wrapper{
-  max-width: 1040px;
+.wrapper{  
+   
+  max-width: 1040px; 
   min-width: 1040px;
   margin:0 auto;
 }
@@ -52,7 +53,7 @@ a{
   width: 350px;
   height: 90px;  
 }
-/*top-------------------------------------*/
+/*TOP-------------------------------------*/
 
 .top{
   display: flex;
@@ -67,7 +68,6 @@ a{
 }
 .introduction{ 
   margin: 25px 30px;
-  white-space: nowrap;
 }
 .introduction p{
   font-size: 2.1rem;
@@ -87,14 +87,11 @@ line-height: 1.8rem;
 letter-spacing: .1rem;  
 }
 /*form-----------------------------*/
-form{
-  margin-left: -70px;
-  padding: 0 4%;
-  white-space: nowrap;
-}
+
 .contact {
   display: flex;
   margin-top: 80px;
+
 }
 .secondary {
   display: flex;
@@ -201,14 +198,16 @@ textarea{
 
 /*NAV-----------------------------*/
 .nav-content{
-  height: 245px;  
+  height: 245px;
+  min-width: 1200px;
   border-top: 12px solid #eeedea;
   border-bottom: 12px solid #eeedea;
   background-color: #ffA800;
 }
-.nav-content .wrapper{
+.nc-container{
   display: flex; 
   align-items: center;
+  
 }
 .nav-icon{  
   position: relative;
@@ -283,9 +282,20 @@ textarea{
 .section-content ul{  
   font-size: 0.9rem;
   font-weight: bold;
-  list-style-position: inside;
+  list-style: none;
   margin-top: 30px;
-  margin-left: 10px;
+  margin-left: 15px;
+}
+.section-content li::before{
+  content: "";
+  width: 6.25px;
+  height: 6.25px;
+  display: inline-block;
+  background-color: #272727;
+  border-radius: 100%;
+  position: relative;
+  top: -2px;
+  left: -15px;
 }
 /*PERFORMANCE-----------------------------*/
 
@@ -311,7 +321,6 @@ textarea{
 .performance-menu-text{
   max-width: 300px;
   min-width: 300px;
-  list-style-position: inside;
   text-align: left;
   padding-top: 20px;
   padding-left: 10px;
@@ -355,10 +364,27 @@ textarea{
   max-width: 190px;
   opacity: .6;
 }
-.permance-list{
+.performance-list{ 
+  list-style: none;
   font-size: 0.95rem;
-  width: 290px;  
-  margin-top: 20px;
+  width: 290px;
+  margin-top: 15px;
+  margin-left: 15px;  
+}
+
+.performance-list li::before{
+  content: "";
+  width: 6.25px;
+  height: 6.25px;
+  display: inline-block;
+  background-color: #272727;
+  border-radius: 100%;
+  position: relative;
+  top: 18px;
+  left: -15px;
+}
+.performance-list li{
+  margin-top: -15px;
 }
 .customer-voice{
   text-decoration: underline;
@@ -400,14 +426,10 @@ textarea{
 .mini-c-name{
   margin-left: 25px;
 }
-/*PERFORMANCE-ANNOUNCE*/
+/*PERFORMANCE-ANNOUNCE------------------------*/
 .performance-announce{
   height: 330px;
   background: #272727;
-  white-space: nowrap;
-}
-.performance-announce .wrapper{
-  max-width: 100%;
 }
 .announce-text{
   width: 50%;
@@ -515,9 +537,6 @@ textarea{
   height: 265px;
   background-color: #ff9600;
 }
-.request-nav .wrapper{
-  margin-left: 70px;
-}
 .request-nav .nav-icon{
   margin-left: 50px;
 }
@@ -529,14 +548,17 @@ textarea{
   top: 50px;
   left: 20px;
 }
+.nav-flex{
+  display: flex;
+  margin-left: -130px;
+}
 .request-flex{
   display: flex;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: 30px;
 }
 .request-flow{
   margin-left: 10px;
-  border: 1px solid red;
 }
 .request-flow h3{
   color: #fff; 
