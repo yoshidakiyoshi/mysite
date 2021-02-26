@@ -5,6 +5,8 @@ html {
 }
 body{  
   font-family: YakuHanJP, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
+  border:12px solid #eeedea;
+  min-width: 1220px;
 }
 a{
   text-decoration: none;
@@ -52,6 +54,7 @@ a{
 .headerRight img{  
   width: 350px;
   height: 90px;  
+  margin-top: -12px;
 }
 /*TOP-------------------------------------*/
 
@@ -165,23 +168,32 @@ textarea{
 }
 /*ボタン*/
 .button-content{
+  height: 115px;
   margin-top: 40px;
   text-align: center;
-  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
 }
+
 .button{
+  display: block;
+  height: 45px;
+  width: 605px;
+  line-height: 45px;
   font-weight: bold;
   background-color: black;
   color: #fff;  
-  padding:11.8px 245px ;
-  border-radius: 20px; 
+  border-radius: 23px; 
   position: relative;
   transition:all 0.1s;
 }
 .button:hover{
-  padding:10.5px 240px ;
+  display: block;
+  height: 43px;
+  width: 587px;
   font-size:.95rem ;
-  opacity: 0.8;
+  opacity: 0.8;  
+  letter-spacing: normal;
 }
 .button span{
   color: black;
@@ -192,6 +204,7 @@ textarea{
 .button-img{
   width: 30px;
   position: absolute;
+  top: 10px;
   right: 10px;
   z-index: 1;
 }
@@ -243,12 +256,6 @@ textarea{
 .features-section{
   margin-top: 90px;
 }
-.features-section .button-img{
-  transform: rotate(90deg);  
-}
-.features-section .button span{
-  transform: rotate(90deg);
-}
 .section-title{
   font-size: 2rem;
   letter-spacing: 5px;
@@ -261,8 +268,7 @@ textarea{
 }
 .section-content{
   width: 285px;
-  margin-right: 100px;  
-  
+  margin-right: 100px;    
 }
 .section-content h2{
   font-family: Quicksand,sans-serif;
@@ -296,6 +302,14 @@ textarea{
   position: relative;
   top: -2px;
   left: -15px;
+}
+/*FEATURES ボタン*/
+.features-section .button-img{
+  transform: rotate(90deg);  
+}
+.features-section .button span{
+  transform: rotate(90deg);
+  right: 18px;
 }
 /*PERFORMANCE-----------------------------*/
 
@@ -428,17 +442,18 @@ textarea{
 }
 /*PERFORMANCE-ANNOUNCE------------------------*/
 .performance-announce{
-  height: 330px;
+  height: 380px;
   background: #272727;
+  border-top:10px solid #eeedea;
+  border-bottom:10px solid #eeedea;
 }
 .announce-text{
   width: 50%;
-  min-width: 500px;
   text-transform: uppercase;
   padding-top: 60px;
   padding-left: 15px;
   padding-right: 20px;
-  float: left;  
+  float: left;
 }
 .announce-text h2{
   font-weight: bold;
@@ -455,10 +470,11 @@ textarea{
   line-height: 1.25;
 }
 .an-img{
-  height: 330px;
+  height: 360px;
   width: 50%;
-  background-image: url(../img/image-kiritori.jpg);
-  float: right;
+  background-image: url(../img/image-kiritori.jpg); 
+  border-left:10px solid #eeedea;  
+  float: right; 
 }
 
 /*アナウンス　ボタン*/
@@ -466,23 +482,22 @@ textarea{
   mix-blend-mode: difference;
   opacity: 0.8;
  }
-.announce-button-content{
+.an-button-content{
   width:500px ;
   margin-top: 30px;
 }
-.announce-button{
+.an-button{
+  width: 430px;
   background-color: #fff;
-  color: #272727;  
-  padding: 11px 120px;
+  color: #272727; 
   margin-left: -65px;
 }
-.announce-button:hover{
+.an-button:hover{  
+  width: 420px;
   background-color: #fff;
-  padding:10.5px 120px ;
-  font-size:.95rem ;
   opacity: 1;
 }
-.announce-button span{
+.an-button span{
   color: #fff;
 }
 
@@ -633,7 +648,6 @@ textarea{
 
 .tel-section{
   text-align: left;
-  margin-top:100px;
   margin-bottom: 80px;
   padding-left:285px ;
   display: flex;
@@ -685,35 +699,11 @@ footer .flex{
   display: flex;
   justify-content: center;
 }
-footer .button-content{
-  margin-top: 10px;
-}
+
 footer img{
   width: 170px;
 }
-footer .button{  
-  font-size: 0.8rem;
-  color: #000;
-  font-weight: normal;
-  background-color: #fff;
-  padding: 8.5px 47px;
-  box-shadow:0 5px 5px 0 rgba(0,0,0,.2)
-}
-footer .button:hover{
-  font-size: 0.75rem;
-  padding: 8px 46px;
-}
-footer .button-img{
-  width: 25px;
-  mix-blend-mode: difference;
-  opacity: 0.3;
-  top: 7px;
- }
-footer .button span{
-  color: #fff;
-  top: 7px;
-  right: 18px;
-}
+
 .footer-text{
   margin-top: 75px;
   margin-left: 105px;
@@ -741,3 +731,43 @@ footer .button span{
   text-align: center;
   letter-spacing: 1px;
 }
+
+/*フッター　ボタン*/
+footer .button-content{
+  margin-top: 10px;
+  margin-left: -15px;
+  width: 200px;
+}
+footer .button{  
+  font-size: 0.8rem;
+  width:180px ;
+  height: 31px;
+  line-height: 31px;
+  color: #000;
+  font-weight: normal;
+  background-color: #fff;
+  box-shadow:0 5px 5px 0 rgba(0,0,0,.2)
+}
+footer .button:hover{
+  width:176px ;
+  height: 30px;
+  font-size: 0.75rem;
+  box-shadow:0 3px 3px 0 rgba(0,0,0,.1)
+}
+footer .button span{
+  color: #fff;
+  right: 18px;
+}
+footer .button-img{
+  width: 25px;
+  mix-blend-mode: difference;
+  opacity: 0.3;
+  top: 5px;
+ }
+
+ /*モバイル版-------------------------------*/
+    @media(max-width:640px){
+      
+
+    }
+
