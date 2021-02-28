@@ -6,15 +6,14 @@ html {
 body{  
   font-family: YakuHanJP, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
   border:12px solid #eeedea;
-  min-width: 1220px;
+  min-width: 1060px;
 }
 a{
   text-decoration: none;
 }
 .wrapper{
-  max-width: 1040px; 
-  min-width: 1040px;
-  margin:0 auto;
+  max-width: 1000px;
+  min-width: 1000px;
 }
  /*ヘッダー-----------------------------*/
 .headerInfo{
@@ -23,7 +22,6 @@ a{
   padding: 0 auto;
   height: 50px;
   margin-bottom: 50px;
-  min-width: 1040px;
 }
 .headerLeft{
   padding-top: 30px;
@@ -62,16 +60,15 @@ a{
   margin-top: 90px;
 }
 .top-img{
-  object-fit: cover;
   margin-right:30px ;
-  margin-left: -40px;
-  max-width: 100%;
-  height: auto;  
+  width: 555px;
+  height: 418px;
 }
 .introduction{ 
-  margin: 25px 30px;
+  margin: 25px 10px;
 }
 .introduction p{
+  width: 360px;
   font-size: 2.1rem;
   font-weight: 700;
   letter-spacing: .4rem;  
@@ -93,7 +90,6 @@ letter-spacing: .1rem;
 .contact {
   display: flex;
   margin-top: 80px;
-
 }
 .secondary {
   display: flex;
@@ -120,7 +116,7 @@ letter-spacing: .1rem;
   margin-bottom: 0.5rem;
 }
 .contact_info{
-  width: 500px;
+  width: 475px;
   margin-right: 25px;
 }
 label{
@@ -211,7 +207,6 @@ textarea{
 /*NAV-----------------------------*/
 .nav-content{
   height: 245px;
-  min-width: 1200px;
   border-top: 12px solid #eeedea;
   border-bottom: 12px solid #eeedea;
   background-color: #ffA800;
@@ -267,7 +262,7 @@ textarea{
 }
 .section-content{
   width: 285px;
-  margin-right: 100px;    
+  margin-right: 85px;    
 }
 .section-content h2{
   font-family: Quicksand,sans-serif;
@@ -765,38 +760,58 @@ footer .button-img{
  }
 
  /*モバイル版-------------------------------*/
-    @media(max-width:580px){
+    @media(max-width:630px){
       /*共通部分*/
+      body{
+        min-width: 500px;
+      }
       .wrapper{
+        min-width: 470px;
       }
       /*ヘッダー*/
       .headerInfo{
-
         border: 1px solid red;
       }
       .headerLeft{
         padding-top: 10px;
         padding-right: 10px;
+        position: unset;
+        display: flex;
       }
       .subTitle{
         border: 1px solid red;
+        position: unset;
       }
       .logo{
         width: 220px;
-        height: 28px;        
+        height: 28px;  
+        position: unset;      
       }
       .dash{
         display: none;
+        position: unset;
       }
       .headerRight img{
         display: none;        
       }
       /*TOP*/
       .top{
-        display:initial;
+        flex-direction: column;
+        margin-top: 25px;
       }
       .top-img{
-        width: 520px;
+        padding: 0 50px;
+        max-width: 100%;
+        max-height: 350px;
+        
+        border: 1px solid red;
+
+      }
+      .introduction p{
+        font-size: 1.25rem;
+        letter-spacing:0px;
+        width: 100%;
+        border: 1px solid red;
       }
     }
 
