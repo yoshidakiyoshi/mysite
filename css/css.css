@@ -27,7 +27,7 @@ a{
 }
 .headerLeft{
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 20px;
   position: relative;
 }
 .logo{
@@ -44,9 +44,9 @@ a{
   left: 215px;
 }
 .subTitle{  
+  width: 320px;
   font-size: 0.825rem;
   letter-spacing: 0.12rem;
-  white-space: nowrap;
   position: absolute;
   left:250px ;
 }
@@ -61,7 +61,7 @@ a{
   display: flex;
   margin-top: 90px;
 }
-.top-jpg{
+.top-img{
   object-fit: cover;
   margin-right:30px ;
   margin-left: -40px;
@@ -165,7 +165,7 @@ textarea::placeholder{
 textarea{
   padding: 1rem; 
 }
-/*ボタン*/
+/*from　ボタン*/
 .button-content{
   height: 115px;
   margin-top: 40px;
@@ -765,8 +765,38 @@ footer .button-img{
  }
 
  /*モバイル版-------------------------------*/
-    @media(max-width:640px){
+    @media(max-width:580px){
+      /*共通部分*/
+      .wrapper{
+      }
+      /*ヘッダー*/
+      .headerInfo{
 
-
+        border: 1px solid red;
+      }
+      .headerLeft{
+        padding-top: 10px;
+        padding-right: 10px;
+      }
+      .subTitle{
+        border: 1px solid red;
+      }
+      .logo{
+        width: 220px;
+        height: 28px;        
+      }
+      .dash{
+        display: none;
+      }
+      .headerRight img{
+        display: none;        
+      }
+      /*TOP*/
+      .top{
+        display:initial;
+      }
+      .top-img{
+        width: 520px;
+      }
     }
 
