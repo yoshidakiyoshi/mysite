@@ -14,12 +14,12 @@ a{
 .wrapper{
   max-width: 1000px;
   min-width: 1000px;
+  margin: 0 auto;
 }
  /*ヘッダー-----------------------------*/
 .headerInfo{
   display: flex;
   justify-content: space-between;
-  padding: 0 auto;
   height: 50px;
   margin-bottom: 50px;
 }
@@ -81,6 +81,7 @@ a{
   flex-direction: column;
 }
 .info span{
+width: 430px;
 font-size: 0.875rem;
 line-height: 1.8rem;
 letter-spacing: .1rem;  
@@ -760,7 +761,7 @@ footer .button-img{
  }
 
  /*モバイル版-------------------------------*/
-    @media(max-width:630px){
+    @media(max-width:640px){
       /*共通部分*/
       body{
         min-width: 500px;
@@ -770,22 +771,30 @@ footer .button-img{
       }
       /*ヘッダー*/
       .headerInfo{
-        border: 1px solid red;
       }
       .headerLeft{
+        margin-left: -10px;
         padding-top: 10px;
         padding-right: 10px;
         position: unset;
         display: flex;
       }
       .subTitle{
-        border: 1px solid red;
+        width: 45vw;
+        font-size: 3.2vw;
+        letter-spacing: 1px;
+        line-height: 1.1;
         position: unset;
       }
+      .subTitle span::before{
+        content: '\A';
+        white-space: pre;
+      }
+      
       .logo{
-        width: 220px;
-        height: 28px;  
-        position: unset;      
+        width: 43vw;
+        height: 6vmin;  
+        position: unset;   
       }
       .dash{
         display: none;
@@ -800,18 +809,47 @@ footer .button-img{
         margin-top: 25px;
       }
       .top-img{
-        padding: 0 50px;
-        max-width: 100%;
-        max-height: 350px;
-        
-        border: 1px solid red;
-
+        width: 72vw;
+        height: 55vmin;
+        margin-left: 45px;
+        margin-top: -16px;
+      }
+      .introduction{
+        margin-top: 18px;
       }
       .introduction p{
-        font-size: 1.25rem;
-        letter-spacing:0px;
+        font-size: 1.3rem;
         width: 100%;
+        letter-spacing: 2px;        
+        line-height:1.25;
+        margin-top: initial;
+        margin-bottom: 20px;
+      }
+      .info span{
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        line-height: 1.35;
+      }
+      .info-s-1{
+        margin-top: 10px;
+      }
+      /*CONTACT*/
+      .contact{
+        flex-direction: column;
+        margin-top: 30px;
+      }
+      .secondary{
+        flex-direction: column;
         border: 1px solid red;
       }
+      .tertiary{
+        display: initial;
+      }
+      .Mandatory{
+        margin-left: -15px;
+      }
+      label{
+      }
+
     }
 
