@@ -92,6 +92,10 @@ letter-spacing: .1rem;
   display: flex;
   margin-top: 80px;
 }
+.contact_info{
+  width: 475px;
+  margin-right: 25px;
+}
 .secondary {
   display: flex;
   justify-content: flex-end;
@@ -116,15 +120,10 @@ letter-spacing: .1rem;
 .question_info label{
   margin-bottom: 0.5rem;
 }
-.contact_info{
-  width: 475px;
-  margin-right: 25px;
-}
 label{
   font-weight: bold;
   font-size: 0.875rem;
 }
-
 .radio_button label,
 input::placeholder,
 textarea::placeholder{
@@ -147,7 +146,7 @@ textarea::placeholder{
   margin-right: 1rem;
 }
 .Mandatory{
-  color: red;
+  color: #db1111;
   font-size: 0.7rem;
 }
 .infomation,
@@ -767,7 +766,7 @@ footer .button-img{
         min-width: 500px;
       }
       .wrapper{
-        min-width: 470px;
+        min-width: 400px;
       }
       /*ヘッダー*/
       .headerInfo{
@@ -836,11 +835,21 @@ footer .button-img{
       /*CONTACT*/
       .contact{
         flex-direction: column;
-        margin-top: 30px;
+        margin: 30px 20px 0;
+      }
+      .contact_info{
+        width: 100%;
+      }
+      .contact_info label,
+      .contact_info span{
+      text-align: left;
+      margin-right: none;
+      letter-spacing: 0px;
       }
       .secondary{
+        width: 100%;
+        min-width: none;
         flex-direction: column;
-        border: 1px solid red;
       }
       .tertiary{
         display: initial;
@@ -848,8 +857,14 @@ footer .button-img{
       .Mandatory{
         margin-left: -15px;
       }
-      label{
+      .infomation{
+        height: 41px;
       }
-
+      .radio_button div{
+        margin-top: 10px;
+        border: 1px solid red;
+      }
+      input
+      
     }
 
