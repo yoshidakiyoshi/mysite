@@ -218,15 +218,10 @@ textarea{
   position: relative;
   margin-top: 30px;
   margin-left: 120px;
+  
+  border: 1px solid #0bd; 
 }
-.nav-icon p{
-  font-weight: bold;
-  color: #ffa800;
-  line-height: 1.1rem;
-  position: absolute;
-  top: 88px;
-  left:25px;
-}
+
 .nav-menu{
   width: 570px;
   margin-top: 35px;
@@ -243,6 +238,21 @@ textarea{
   padding: 6px 12px;
   margin: 5px;
 }
+/*NAV画像と文章*/
+.pc {display: block;}
+.sp {display: none;}
+.nv-p-pc{
+  font-weight: bold;
+  color: #ffa800;
+  line-height: 1.1rem;
+  position: absolute;
+  top: 88px;
+  left:25px;
+}
+.nv-p-sp{
+  display: none;
+}
+
 /*FEATURES-----------------------------*/
 .features-section{
   margin-top: 90px;
@@ -904,12 +914,38 @@ footer .button-img{
       }
       /*NAV*/
       .nav-content{
-        height: 298px;        
+        height: 300px;           
       }
       .nc-container{
         display: initial;        
       }
-      .nav-icon{        
+      .nav-icon{
+        position: initial; 
+        margin-left:38% ;
+      }
+      /*NAV画像*/
+      .pc {display: none;}
+      .sp {
+        display: block;
+        width:105px ;
+        height: 68px;
+      }
+      .nv-p-pc{
+        display: none;
+      }
+      .nv-p-sp{
+        font-size: 0.95rem;
+        display: block;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.1rem;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .nav-menu{
+        width:100% ;
+        height: 105px;
+        margin-top: 12px;
       }
       
       
