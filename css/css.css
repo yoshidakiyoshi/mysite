@@ -207,8 +207,8 @@ textarea{
 /*NAV-----------------------------*/
 .nav-content{
   height: 245px;
-  border-top: 12px solid #eeedea;
-  border-bottom: 12px solid #eeedea;
+  border-top: 10px solid #eeedea;
+  border-bottom: 10px solid #eeedea;
   background-color: #ffA800;
 }
 .nc-container{ 
@@ -218,8 +218,6 @@ textarea{
   position: relative;
   margin-top: 30px;
   margin-left: 120px;
-  
-  border: 1px solid #0bd; 
 }
 
 .nav-menu{
@@ -271,10 +269,11 @@ textarea{
   width: 285px;
   margin-right: 85px;    
 }
-.section-content h2{
-  font-family: Quicksand,sans-serif;
+.section-content h2{  
   font-size: 3rem;
-  color: #ffa800;
+  font-family: Quicksand,sans-serif;
+  color: #ff9600;
+  letter-spacing: 1px;
 }
 .section-content h3{
   font-size: 1.45rem;
@@ -554,9 +553,14 @@ textarea{
   background-color: #ff9600;
 }
 .request-nav .nav-icon{
-  margin-left: 50px;
+  margin-top: 40px;
 }
-.request-nav .nav-p{
+.nav-flex{
+  display: flex;
+  margin-left: -139px;
+  border: 1px solid blue;
+}
+.request-nav .nv-p-pc{
   font-size: 1.25rem;
   line-height: initial;
   text-align: center;
@@ -564,13 +568,9 @@ textarea{
   top: 50px;
   left: 20px;
 }
-.nav-flex{
-  display: flex;
-  margin-left: -130px;
-}
 .request-flex{
   display: flex;
-  margin-top: 40px;
+  margin-top: 63px;
   margin-left: 30px;
 }
 .request-flow{
@@ -768,14 +768,14 @@ footer .button-img{
 
  /*モバイル版-------------------------------*/
     @media(max-width:640px){
-      /*共通部分*/
+      /*共通部分---------------------*/
       body{
         min-width: 500px;
       }
       .wrapper{
         min-width: 400px;
       }
-      /*ヘッダー*/
+      /*ヘッダー---------------------*/
       .headerInfo{
       }
       .headerLeft{
@@ -809,7 +809,7 @@ footer .button-img{
       .headerRight img{
         display: none;        
       }
-      /*TOP*/
+      /*TOP---------------------*/
       .top{
         flex-direction: column;
         margin-top: 25px;
@@ -839,7 +839,7 @@ footer .button-img{
       .info-s-1{
         margin-top: 10px;
       }
-      /*CONTACT*/
+      /*CONTACT---------------------*/
       .contact{
         flex-direction: column;
         margin: 30px 20px 0;
@@ -912,7 +912,7 @@ footer .button-img{
         top: 8px;
         right: 10px;
       }
-      /*NAV*/
+      /*NAV---------------------*/
       .nav-content{
         height: 300px;           
       }
@@ -947,8 +947,64 @@ footer .button-img{
         height: 105px;
         margin-top: 12px;
       }
-      
-      
+      .nav-menu-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .nav-menu-list li{  
+        width: fit-content;
+        font-size: .765rem; 
+        margin: 5px;
+        padding:3px 10px ;   
+        float: none;  
+        white-space: nowrap;      
+      }
+      /*FEATURES---------------------*/
+      .features-section{
+        margin-top: 20px;
+      }
+      .section-title{
+        font-size: 1.45rem;
+        letter-spacing: 3px;
+      }
+      .section-menu{
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      .section-content{
+        width: 100%;
+        margin-right: unset;
+        margin-bottom: 10px;
+        padding:0 20px;
+      }
+      .section-content h2{
+        font-size: 2.5rem;
+      }
+      .section-content h3{
+        font-size: 1.35rem;
+        letter-spacing: 1px;
+      }
+      .section-content p{
+        font-size: .8rem;
+        letter-spacing: 0.8px;
+      }
+      .section-content ul{  
+        font-size: 0.78rem;
+      }
+      .section-content li::before{
+        width: 5px;
+        height: 5px;
+      }
+      .section-content p,
+      .section-content li{
+        line-height: 1.4;
+      }
+      /*FEATURES ボタン*/
+      .features-section .button-content{
+        display: none;
+      }
       
     }
 
