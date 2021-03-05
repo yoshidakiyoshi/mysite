@@ -315,12 +315,13 @@ textarea{
 
 /*大きい実績*/
 .performance-content{
-  border-top: 12px solid #eeedea;
+  border-top: 10px solid #eeedea;
 }
 .performance-content h2{
   font-size: 2.125rem;
   margin-top: 70px;
   margin-bottom: 50px;
+  letter-spacing: 1.2px;
   text-align: center;
 }
 .performance-menu{
@@ -330,7 +331,7 @@ textarea{
 }
 
 .performance-menu img{
-  box-shadow: 0 10px 10px 0 rgba(201, 188, 188, 0.637);
+  box-shadow:0 5px 5px 0 rgba(201, 188, 188, 0.637);
 }
 .performance-menu-text{
   max-width: 300px;
@@ -776,8 +777,7 @@ footer .button-img{
         min-width: 400px;
       }
       /*ヘッダー---------------------*/
-      .headerInfo{
-      }
+      
       .headerLeft{
         margin-left: -10px;
         padding-top: 10px;
@@ -1005,6 +1005,56 @@ footer .button-img{
       .features-section .button-content{
         display: none;
       }
+      /*PERFORMANCE-----------------------------*/
+
+      /*大きい実績*/
+      .performance-content h2{
+        font-size: 1.5rem;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        text-align: center;
+        border: 1px solid blue;
+      }
       
+      .performance-menu{
+        flex-direction: column;
+        margin-bottom: 50px;
+        line-height: 1.2;
+      }
+      .performance-menu img{
+        margin: 0 20px;
+        order: 1;
+      }
+      .performance-menu-text{ 
+        max-width: unset;
+        min-width: unset;      
+        text-align: initial;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        order: 2;
+      }
+      .monotukuri-text,
+      .aisei-text{
+        margin-left: unset;
+      }
+      .sb-text{
+        margin-right: unset;
+      }
+      .performance-title{
+        font-size: 1.2rem;
+        margin-bottom: 10px;  
+      }
+      .perfonmance-subtitle{
+        font-size: 1.2rem;
+      }
+      .project,
+      .client{
+        display: flex;
+        justify-content: unset;
+        font-size: 0.875rem;
+        margin-bottom: 10px;
+}
+
     }
 
