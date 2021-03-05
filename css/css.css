@@ -360,31 +360,37 @@ textarea{
   margin-bottom: 25px;
   letter-spacing: .1rem;
 }
-.project,
-.client{
+.pf-flex{
   display: flex;
-  justify-content: space-between;
-  font-size: 0.875rem;
+}
+
+.pf-f-list1,
+.pf-f-list2{
+  list-style: none;
+}
+.pf-f-list1 li,
+.pf-f-list2 li{
+  font-size: 0.85rem;
   margin-bottom: 10px;
 }
-.project-title{
+.pf-f-list1 li{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
   font-weight: bold;
 }
-.project a{
-  text-decoration:underline;
+.pf-f-list2{
+  margin-left: 30px;
+  color: #808080;
+  opacity: .8;
 }
-.project-name,
-.performance-menu a{
-  width: 190px;
-  max-width: 190px;
-  opacity: .6;
-}
+
 .performance-list{ 
   list-style: none;
   font-size: 0.95rem;
-  width: 290px;
+  width: 280px;
   margin-top: 15px;
-  margin-left: 15px;  
+  margin-left: 15px; 
+  letter-spacing: 1px;
 }
 
 .performance-list li::before{
@@ -401,13 +407,17 @@ textarea{
 .performance-list li{
   margin-top: -15px;
 }
+.pf-flex a,
 .customer-voice{
-  text-decoration: underline;
+  color: #5e8adb;
+  text-decoration:underline;
+}
+.customer-voice{
+  display: block;
   text-align: center;
   width: 100%;
   margin-top:30px;
 }
-
 .sb-text,
 .aisei-text{
   margin-top: 70px;
@@ -430,17 +440,14 @@ textarea{
 .mini-subtitle{
   font-size: 1.2rem;
 }
-.mini-project,
-.mini-client{
-  font-size: 0.75rem;
-  justify-content:start;  
-}
-.mini-p-name{
+.mini-list2{
   margin-left: 15px;
 }
-.mini-c-name{
-  margin-left: 25px;
+.mini-list1 li,
+.mini-list2 li{
+  font-size: 0.75rem;
 }
+
 /*PERFORMANCE-ANNOUNCE------------------------*/
 .performance-announce{
   height: 380px;
@@ -1013,7 +1020,6 @@ footer .button-img{
         margin-top: 35px;
         margin-bottom: 25px;
         text-align: center;
-        border: 1px solid blue;
       }
       
       .performance-menu{
@@ -1048,13 +1054,7 @@ footer .button-img{
       .perfonmance-subtitle{
         font-size: 1.2rem;
       }
-      .project,
-      .client{
-        display: flex;
-        justify-content: unset;
-        font-size: 0.875rem;
-        margin-bottom: 10px;
-}
+      
 
     }
 
