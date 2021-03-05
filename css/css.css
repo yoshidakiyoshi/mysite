@@ -349,6 +349,7 @@ textarea{
 }
 .performance-title{
   font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
   color: #ff9600;
   font-weight:bold;
   margin-bottom: 25px;  
@@ -446,6 +447,9 @@ textarea{
 .mini-list1 li,
 .mini-list2 li{
   font-size: 0.75rem;
+}
+.li-item{
+  margin-top: 23px;
 }
 
 /*PERFORMANCE-ANNOUNCE------------------------*/
@@ -566,7 +570,6 @@ textarea{
 .nav-flex{
   display: flex;
   margin-left: -139px;
-  border: 1px solid blue;
 }
 .request-nav .nv-p-pc{
   font-size: 1.25rem;
@@ -1024,7 +1027,7 @@ footer .button-img{
       
       .performance-menu{
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 45px;
         line-height: 1.2;
       }
       .performance-menu img{
@@ -1037,7 +1040,7 @@ footer .button-img{
         text-align: initial;
         padding-top: 20px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 25px;
         order: 2;
       }
       .monotukuri-text,
@@ -1054,7 +1057,36 @@ footer .button-img{
       .perfonmance-subtitle{
         font-size: 1.2rem;
       }
-      
+      .pf-f-list2{
+        margin-left: 20px;
+      }
+      .pf-f-list2 li{
+        font-size: 0.775rem;
+        margin-bottom: 13px;
+      }
+      .performance-list{ 
+        font-size: 0.8rem;
+        width: 100%;
+        margin-top: 10px;
+        line-height: 1.4;
+      }
+      .performance-list li::before{
+        top: 16px;
+      }
+      .customer-voice{
+        font-size: 0.8rem;
+        margin-top:40px;
+      }
+      .sb-text,
+      .aisei-text{
+       margin-top:unset;
+       height: unset;
+      }
+      #grid{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid blue;
+      }
 
     }
 
