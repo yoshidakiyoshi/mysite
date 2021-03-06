@@ -16,6 +16,7 @@ a{
   min-width: 1000px;
   margin: 0 auto;
 }
+
  /*ヘッダー-----------------------------*/
 .headerInfo{
   display: flex;
@@ -168,6 +169,7 @@ textarea{
   text-align: center;
   display: flex;
   justify-content: center;
+  
 }
 
 .button{
@@ -184,7 +186,7 @@ textarea{
 }
 .button:hover{
   display: block;
-  height: 43px;
+  height: 44px;
   width: 587px;
   font-size:.95rem ;
   opacity: 0.8;  
@@ -425,7 +427,7 @@ textarea{
   height: 400px;
 }
 /*小さい実績*/
-#grid{
+.grid-box{
  display: grid; 
  grid-template-columns: repeat(2,1fr);
 }
@@ -450,6 +452,9 @@ textarea{
 }
 .li-item{
   margin-top: 23px;
+}
+.r-pf-mini-box{
+  display: none;
 }
 
 /*PERFORMANCE-ANNOUNCE------------------------*/
@@ -487,6 +492,9 @@ textarea{
   background-image: url(../img/image-kiritori.jpg); 
   border-left:10px solid #eeedea;  
   float: right; 
+}
+.r-an-img{
+  display: none;
 }
 
 /*アナウンス　ボタン*/
@@ -604,33 +612,42 @@ textarea{
 .item3{
   margin-left:-3px ;
 }
+.r-question{
+  display: none;
+}
+.r-req-nv{
+  display: none;
+}
 
 /*お問い合わせ----------------------*/
 .request-content{
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 50px;
 }
 .request-content h1{
   font-size: 2.2rem;
   letter-spacing: 3px;
   margin-bottom: 15px;
 }
-.request-p1{
-  margin-bottom: 25px;
-  line-height: 1.3;
-}
 .request-content img{
   width: 115px;
   margin-bottom: 24px;
 }
+.request-p1{
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+
 .request-p2{
   font-size: .75rem;
   line-height: initial;
 }
-/*リクエストコンテンツ　コンタクト部分*/
-.request-content{
-  margin-bottom: 50px;
+.r-request-p1,
+.r-request-p2{
+  display: none;
 }
+/*リクエストコンテンツ　コンタクト部分*/
 .request-content .radio_button{
   text-align: initial;
 }
@@ -696,6 +713,9 @@ textarea{
 .tel-span{
   margin-left: 20px;
   color: #989898;
+}
+.r-tel-img{
+  display: none;
 }
 /*フッター----------------------*/
 
@@ -776,18 +796,31 @@ footer .button-img{
   opacity: 0.3;
   top: 5px;
  }
+ .r-footer-bt-content{
+   display: none;
+ }
+
+
 
  /*モバイル版-------------------------------*/
     @media(max-width:640px){
       /*共通部分---------------------*/
       body{
-        min-width: 500px;
+        min-width: 480px;
+        border:none;
+      }
+      header{
+        min-width: 460px;
       }
       .wrapper{
         min-width: 400px;
       }
+      .r-box{
+        border: 10px solid #eeedea;
+
+      }
       /*ヘッダー---------------------*/
-      
+
       .headerLeft{
         margin-left: -10px;
         padding-top: 10px;
@@ -805,8 +838,7 @@ footer .button-img{
       .subTitle span::before{
         content: '\A';
         white-space: pre;
-      }
-      
+      }      
       .logo{
         width: 43vw;
         height: 5.5vmin;  
@@ -883,7 +915,10 @@ footer .button-img{
       .question_info{
         width: 100%;
         height: 190px;
-        margin-top: -24px;
+        margin-top: -10px;
+      }
+      .question_info label{
+        margin-bottom: 3px !important;
       }
       textarea::placeholder{
         font-size: 0.825rem;
@@ -924,7 +959,8 @@ footer .button-img{
       }
       /*NAV---------------------*/
       .nav-content{
-        height: 300px;           
+        height: 300px;
+        border-top: 0.1px solid #eeedea; 
       }
       .nc-container{
         display: initial;        
@@ -1082,11 +1118,321 @@ footer .button-img{
        margin-top:unset;
        height: unset;
       }
-      #grid{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid blue;
+      /*小さい実績*/
+      .grid-box{
+        display: none;
       }
+      .r-pf-mini-box{
+        display: block;
+        margin: 0 20px;
+      }
+      .r-pf-menu{
+        margin-bottom:40px ;
+      }
+      .r-pf-title{
+        font-size: 1rem;
+        font-weight: bolder;
+        color: #ff9600;
+      }
+      .r-pf-subtitle{
+        font-size: 0.95rem;
+        font-weight: bolder;
+        margin-top: 8px;
+      }
+      .r-pf-title,
+      .r-pf-subtitle{        
+        letter-spacing: 1px;
+      }
+      .r-pf-menu-text{
+        display: flex;
+        margin-top: 10px;
+      }
+      .r-pf-menu-text img{
+        width: 38vw;
+        height: 32vmin;
+      }
+      .r-pf-list-box{
+        margin-left: 20px;
+      }
+      .r-pf-list-box ul{
+        list-style: none;
+        font-size: .75rem;
+      }
+      .r-pf-f-list2{
+        margin-top: 10px;
+      }
+      .r-pf-f-list1-li2{
+        color: #5e8adb;
+        text-decoration: underline;
+      }
+      .r-pf-f-list1-li2-2,
+      .r-pf-f-list2-li2{
+        color: #808080;
+        opacity: .8;
+      }
+      .r-pf-f-list1-li1,
+      .r-pf-f-list2-li1{
+        font-family:'Quicksand', sans-serif;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+      /*PERFORMANCE-ANNOUNCE*/
+      .performance-announce{
+        height: 245px;
+        background: #272727;
+        border-top:10px solid #eeedea;
+        border-bottom:none;
+      }
+      .announce-text{
+        width:100%;
+        padding-top: 45px;
+        padding-left: 15px;
+        padding-right: 20px;        
+        text-align: center;
+      }
+      .announce-text h2{
+        font-size: 1.25rem;
+      }
+      .announce-text p{
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 20px;
+        line-height: 1.25;
+      }
+      .an-img{
+        display: none;
+      }
+      .r-an-img{
+        display: block;
+        width: 100%;
+        height: 59vmin;
+        background-color: #272727;
+        background-image: url(../img/spph.png); 
+        background-size: cover;
+        border-left:none;
+        border-bottom: 10px solid #eeedea;
+      }
+      /*アナウンス　ボタン*/
+
+      .an-button-content{
+        width:100%x;
+      }
+      .performance-announce .button-img{
+        opacity: 0.3;
+      }
+      .an-button{
+        width: 250px;
+        margin-left: unset;
+      }
+      .an-button:hover{  
+        width: 242px;
+      }
+      /*QUESTION-----------------------------*/
+
+      .question-section h1{
+        font-size: 1.5rem;
+        margin-top: 50px;
+        letter-spacing: 2px;
+      }
+      #container{
+        display: none;
+      }
+      .r-question{
+        display: block;
+        margin-top: 20px;
+        padding: 0 20px;
+      }
+      .r-question-menu{        
+        margin-bottom: 30px;
+      }
+      .r-q-flex{
+        display: flex;
+      }
+      .r-q-flex h2{
+        font-size: .95rem;
+        margin-top: 3px;
+      }
+      .r-q-text{
+        background: #eeedea;
+        padding: 22px 20px;
+      }
+      .r-q-text h3{
+        font-size: .95rem;
+      }
+      .r-q-text p{
+        font-size: .8rem;
+        margin-top: 8px;
+      }
+      .r-q-flex h2,
+      .r-q-text h3,
+      .r-q-text p{
+        letter-spacing: 1px;
+      }
+      /*request-nav -----------------------------*/
+      .nav-flex{
+        display: none;
+      }
+      .request-nav{
+        height: 398px;
+        border-top: 10px solid #eeedea;
+      }
+      .r-req-nv{
+        display: block;        
+        letter-spacing: 1.1px;
+      }
+      .r-req-nv h2{
+        color: #fff;
+        margin-top: 35px;
+        text-align: center;
+      }
+      .r-req-flex{
+        display: flex;
+        margin: 10px 20px 0;
+      }
+      .r-req-text{
+        color: #fff;
+        margin: 8px 0 27px;
+      }
+      .r-req-text h3{
+        font-size: .95rem;
+        margin-bottom: 4px;
+      }
+      .r-req-text p{
+        font-size: .8rem;
+        line-height: 1.35;
+      }
+      /*お問い合わせ----------------------*/
+      .request-content{
+        margin-top: 40px;
+      }
+      .request-content h1{
+        font-size: 1.45rem;
+      }
+      .request-content img{
+        width: 85px;
+        margin-bottom: 10px;
+      }
+      .request-p1,
+      .request-p2{
+        display: none;
+      }
+      .r-request-p1,
+      .r-request-p2{
+        display: block;
+        font-size: .8rem;
+        margin-bottom: 25px;
+      }
+      /*リクエストコンテンツ　コンタクト部分*/
+      .request-content .contact_info,
+      .request-content .question_info{
+        margin-left:unset ;
+      }
+      .request-content .question_info{
+        width: 100%;
+        flex-direction: column;
+      }
+      .request-content textarea{
+        width: 100%;
+        margin-left: unset;
+      }
+
+      /*TEL-SECTION-----------------------*/
+      .tel-section{
+        margin: 50px 20px 60px;
+        padding-left:unset;
+        justify-content: space-between;
+      }
+      .tel-text{
+        margin-left:unset;
+      }
+      .tel-text h3{
+        font-size: .9rem;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+      .tel-text p{
+        font-size: 1.65rem;
+        letter-spacing: .5px;
+        margin-bottom: 10px;
+      }
+      .tel-label label,
+      .tel-span span{
+        margin-bottom: 5px;
+        font-size: .75rem;
+      }
+      .tel-span{
+        margin-left: 13px;
+      }
+      .tel-span a::before{
+        content: '\A';
+        white-space: pre;
+      }
+      .tel-img{
+        display: none;
+      }
+      .r-tel-img{
+        display: block;
+        margin-top: 40px;
+        transform: scale(-1,1);
+        width: 82px !important ;
+        height: 92px;
+      }
+      /*フッター----------------------*/
+      footer{
+        height: 365px;
+        padding: 0 20px;
+      }
+      .footer-logo{
+        padding-top: 42px;  
+        margin-left:unset;
+      }
+       footer .flex{
+        flex-direction: column;
+        justify-content: unset;
+      }
+      footer img{
+        width: 186px;
+      }
+      .footer-text{
+        margin-top: 15px;
+        margin-left: unset;
+      }
+      .label-list li,
+      .co-list li{
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+      .copyright{
+        margin-top: -8px;
+      }
+      .copyright a::before{
+        content: '\A';
+        white-space: pre;
+      }
+      /*フッター　ボタン*/
+      .footer-bt-content{
+        display: none;
+      }
+      .r-footer-bt-content{
+        display: block;
+        margin-top: 20px !important;
+        margin-left: 22vw !important;      
+        padding: 0 20px;  
+      }
+      .r-footer-bt-content .button{
+        height: 41px;
+        line-height: 41px;        
+      }
+      footer .button:hover{
+        width:176px ;
+        height: 40px;
+      }
+      footer .button-img{
+        top: 9px;
+      }
+
+
+
 
     }
 
