@@ -849,10 +849,21 @@ footer .button-img{
   transform: rotate(90deg);
   right: 18px;
 }
+/*ガイドボタン　SP　中部*/
 
-  /*ガイドボタン　PC　下部*/
+.ru-sp-button-content{
+  display: none;
+}
+
+/*ガイドボタン　PC　下部*/
   .ru-btn{
-    position: relative;   
+    position: relative;
+    animation: 3s linear backwards rotation3;   
+  }
+
+  @keyframes rotation3{
+    0%{transform:rotateX(0);}
+    100%{transform: rotateX(360deg);}
   }
   .ru-btn-img{
     width: 65px;
@@ -1500,8 +1511,12 @@ footer .button-img{
       footer .button-img{
         top: 9px;
       }
+      .ru-button-content{
+        display: none;
+      }
       /*ガイドボタン　SP　中部*/
       .ru-sp-button-content{
+        display: block;
         height: 60px;
         background-color: #eeedea;
         text-align: center;
@@ -1551,6 +1566,9 @@ footer .button-img{
         transform: rotate(90deg);
         right: 18px;
       }
+
+      
+
 
 
 
