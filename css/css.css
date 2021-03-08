@@ -802,14 +802,14 @@ footer .button-img{
 
 
 /*ガイドボタン　PC　上部*/
-.ru-button-content{
+.gaide-top{
   height: 50px;
   text-align: center;
   display: flex;
   justify-content: center;
   border: 1px solid red;
 }
-.ru-button{
+.gaide-top-button{
   display: block;
   height: 45px;
   width: 200px;
@@ -821,7 +821,7 @@ footer .button-img{
   position: relative;
   transition:all 0.1s;
 }
-.ru-button:hover{
+.gaide-top-button:hover{
   display: block;
   height: 44px;
   width: 194px;
@@ -829,48 +829,56 @@ footer .button-img{
   opacity: 0.8;  
   letter-spacing: normal;
 }
-.ru-button span{
+.gaide-top-button span{
   color: black;
   position: absolute;
   right: 20px;
   z-index: 2;
 }
-.ru-button-img{
+.gaide-top-button img{
   width: 30px;
   position: absolute;
   top: 10px;
   right: 10px;
   z-index: 1;
 }
-.ru-button-img{
+.gaide-top-button img{
   transform: rotate(90deg);  
 }
-.ru-button span{
+.gaide-top-button span{
   transform: rotate(90deg);
   right: 18px;
 }
 /*ガイドボタン　SP　中部*/
 
-.ru-sp-button-content{
+.gaide-middle{
   display: none;
 }
 
 /*ガイドボタン　PC　下部*/
-  .ru-btn{
+  .gaide-under{
     position: relative;
-    animation: 3s linear backwards rotation3;   
   }
 
-  @keyframes rotation3{
-    0%{transform:rotateX(0);}
-    100%{transform: rotateX(360deg);}
-  }
-  .ru-btn-img{
+  .gaide-under img{
     width: 65px;
     border: 1px solid red;
   }
  
- .ru-btn p{
+  .gaide-under img:hover{
+    animation-name:rotation3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+    -o-animation-direction: normal;
+
+  }
+  @keyframes rotation3{
+    0%{transform:rotateX(0);}
+    100%{transform: rotateX(180deg);}
+  }
+
+ .gaide-under p{
    font-size: .8rem;
    font-family: Quicksand,sans-serif;
    font-weight: bold;
@@ -1511,11 +1519,11 @@ footer .button-img{
       footer .button-img{
         top: 9px;
       }
-      .ru-button-content{
+      .gaide-top{
         display: none;
       }
       /*ガイドボタン　SP　中部*/
-      .ru-sp-button-content{
+      .gaide-middle{
         display: block;
         height: 60px;
         background-color: #eeedea;
@@ -1524,7 +1532,7 @@ footer .button-img{
         justify-content: center;
         border: 1px solid red;
       }
-      .ru-sp-button{
+      .gaide-middle-button{
         font-size: .8rem;
         display: block;
         height: 40px;
@@ -1537,7 +1545,7 @@ footer .button-img{
         position: relative;
         transition:all 0.1s;
       }
-      .ru-sp-button:hover{
+      .gaide-middle-button:hover{
         font-size: .775rem !important;
         display: block;
         height: 39px;
@@ -1546,23 +1554,23 @@ footer .button-img{
         opacity: 0.8;  
         letter-spacing: normal;
       }
-      .ru-sp-button span{
+      .gaide-middle-button span{
         color: black;
         position: absolute;
         right: 14px !important;
         z-index: 2;
       }
-      .ru-sp-button-img{
+      .gaide-middle-button img{
         width: 25px;
         position: absolute;
         top: 8px;
         right: 7px;
         z-index: 1;
       }
-      .ru-sp-button-img{
+      .gaide-middle-button img{
         transform: rotate(90deg);  
       }
-      .ru-sp-button span{
+      .gaide-middle-button span{
         transform: rotate(90deg);
         right: 18px;
       }
