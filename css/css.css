@@ -7,6 +7,7 @@ body{
   font-family: YakuHanJP, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
   border:12px solid #eeedea;
   min-width: 1060px;
+  position: relative;
 }
 a{
   text-decoration: none;
@@ -722,6 +723,7 @@ textarea{
 footer{
   height: 270px;
   background:#eeedea ; 
+  position: relative;
 }
 .footer-logo{
   padding-top: 75px;  
@@ -800,9 +802,15 @@ footer .button-img{
    display: none;
  }
 
-
+/*ガイドボタン------------------------------*/
 /*ガイドボタン　PC　上部*/
+.gd-top-position{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
 .gaide-top{
+  width: 250px;
   height: 50px;
   text-align: center;
   display: flex;
@@ -856,36 +864,50 @@ footer .button-img{
 }
 
 /*ガイドボタン　PC　下部*/
+  .gd-und-position{
+    position: absolute;
+    top: -50px;
+    right: 140px;
+  }
   .gaide-under{
     position: relative;
   }
 
   .gaide-under img{
-    width: 65px;
-    border: 1px solid red;
+    width: 90px;
+    animation-name:rotation2;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
   }
  
   .gaide-under img:hover{
-    animation-name:rotation3;
-    animation-duration: 10s;
+    animation-name:rotation1;
+    animation-duration: 0.2s;
     animation-timing-function: linear;
     animation-iteration-count: initial;
-    -o-animation-direction: normal;
-
+    animation-direction: normal;
+    animation-fill-mode: forwards;
   }
-  @keyframes rotation3{
+  @keyframes rotation1{
     0%{transform:rotateX(0);}
     100%{transform: rotateX(180deg);}
   }
+  @keyframes rotation2{
+    0%{transform:rotateX(180deg) ;}
+    100%{transform: rotateX(0deg);}
+  }
 
  .gaide-under p{
-   font-size: .8rem;
+   font-size: 0.95rem;
    font-family: Quicksand,sans-serif;
    font-weight: bold;
    color: #fff;
    position: absolute;
-   top: 32px;
-   left: 16px;
+   top: 45px;
+   left: 25px;
    text-align: center;
    letter-spacing: 0.8px;
  }
@@ -1575,12 +1597,21 @@ footer .button-img{
         right: 18px;
       }
 
-      
+      /*ガイドボタン　下部*/
+      .gd-position{
+        position: absolute;
+        top: -32px;
+        right: 20px;
+      }
+      .gaide-under img{
+        width: 66px;
+      }
+      .gaide-under p{
+        font-size: .8rem;
+        top: 32px;
+        left: 16px;
 
-
-
-
-
+      }
 
     }
 
