@@ -7,7 +7,6 @@ body{
   font-family: YakuHanJP, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
   border:12px solid #eeedea;
   min-width: 1060px;
-  position: relative;
 }
 a{
   text-decoration: none;
@@ -184,6 +183,7 @@ textarea{
   border-radius: 23px; 
   position: relative;
   transition:all 0.1s;
+  letter-spacing: 1px;
 }
 .button:hover{
   display: block;
@@ -805,9 +805,9 @@ footer .button-img{
 /*ガイドボタン------------------------------*/
 /*ガイドボタン　PC　上部*/
 .gd-top-position{
-  position: absolute;
+  position: fixed;
   top: 30px;
-  right: 30px;
+  right: 10px;
 }
 .gaide-top{
   width: 250px;
@@ -815,7 +815,6 @@ footer .button-img{
   text-align: center;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 }
 .gaide-top-button{
   display: block;
@@ -828,14 +827,14 @@ footer .button-img{
   border-radius: 23px; 
   position: relative;
   transition:all 0.1s;
+  letter-spacing: 1px;
 }
 .gaide-top-button:hover{
-  display: block;
   height: 44px;
   width: 194px;
   font-size:.95rem ;
   opacity: 0.8;  
-  letter-spacing: normal;
+  
 }
 .gaide-top-button span{
   color: black;
@@ -875,6 +874,7 @@ footer .button-img{
 
   .gaide-under img{
     width: 90px;
+    cursor: pointer;
     animation-name:rotation2;
     animation-duration: 0.2s;
     animation-timing-function: linear;
@@ -1566,6 +1566,7 @@ footer .button-img{
         border-radius: 23px; 
         position: relative;
         transition:all 0.1s;
+        letter-spacing: 1px;
       }
       .gaide-middle-button:hover{
         font-size: .775rem !important;
