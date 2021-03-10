@@ -871,6 +871,14 @@ footer .button-img{
   .gaide-under{
     position: relative;
   }
+  .gaide-under img:hover{
+    animation-name:rotation1;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
 
   .gaide-under img{
     width: 90px;
@@ -883,14 +891,7 @@ footer .button-img{
     animation-fill-mode: forwards;
   }
  
-  .gaide-under img:hover{
-    animation-name:rotation1;
-    animation-duration: 0.2s;
-    animation-timing-function: linear;
-    animation-iteration-count: initial;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-  }
+
   @keyframes rotation1{
     0%{transform:rotateX(0);}
     100%{transform: rotateX(180deg);}
