@@ -807,7 +807,7 @@ footer .button-img{
 .gd-top-position{
   position: fixed;
   top: 30px;
-  right: 10px;
+  right: 7px;
 }
 .gaide-top{
   width: 250px;
@@ -875,10 +875,9 @@ footer .button-img{
   .gaide-under img{
     width: 90px;
     cursor: pointer;
-
   }
 
-  #gd-img{
+  #gd-und{
     animation-name:rotation2;
     animation-duration: 0.2s;
     animation-timing-function: linear;
@@ -887,7 +886,7 @@ footer .button-img{
     animation-fill-mode: forwards;
   }
  
-  #gd-img:hover{
+  #gd-und:hover{
     animation-name:rotation1;
     animation-duration: 0.2s;
     animation-timing-function: linear;
@@ -1551,20 +1550,24 @@ footer .button-img{
         display: none;
       }
       /*ガイドボタン　SP　中部*/
-      .gaide-middle{
-        display: block;
+      #gd-mid{
+        display: none;
+      }
+      .gaide-middle{        
+        width: 100%;
         height: 60px;
         background-color: #eeedea;
         text-align: center;
         display: flex;
         justify-content: center;
-        border: 1px solid red;
+        position: fixed;
+        bottom: 0px;
       }
       .gaide-middle-button{
         font-size: .8rem;
         display: block;
         height: 40px;
-        width: 410px;
+        width: 82vmin;
         margin-top: 10px;
         line-height: 40px;
         background-color: black;
