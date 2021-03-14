@@ -808,6 +808,7 @@ footer .button-img{
   position: fixed;
   top: 30px;
   right: 7px;
+  border: 1px solid #008bbb;
 }
 .gaide-top{
   width: 250px;
@@ -818,6 +819,7 @@ footer .button-img{
 }
 .gaide-top-button{
   display: block;
+  cursor: pointer;
   height: 45px;
   width: 200px;
   line-height: 45px;
