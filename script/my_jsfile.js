@@ -1,55 +1,71 @@
-$(function() {
+$(function(){
 
-  /*ガイド　トップ----------------*/
-    $(function(){
+  /*ガイド　トップ------------------------------*/
+  $(function(){
 
-        var gd_top = $('#gd-top');
-        var em = 40;
-        
-        gd_top.css('display','none');
+      var gd_top = $('#gd-top');
+      var em = 40;
 
-        /*アニメーション*/
-        $(window).scroll(function(){
-          var scroll = $(this).scrollTop();
-          if(scroll < em){
-            gd_top.fadeOut();
-          } else {
-            gd_top.fadeIn();
-          }
-        });
+      gd_top.css('display','none');
 
-        /*クリック*/    
-        var re_position = $('#re-position').offset().top - 93;
+      /*アニメーション*/
+      $(window).scroll(function(){
+      var scroll = $(this).scrollTop();
+      if(scroll < em){
+      gd_top.fadeOut();
+      } else {
+      gd_top.fadeIn();
+      }
+      });
 
-        gd_top.click(function(){
-          $('html').animate({scrollTop:re_position});
-        });
-    
+      /*クリック*/    
+      var re_position = $('#re-position').offset().top - 93;
 
-    });// /ガイドトップ
-
-   /*ガイド　アンダー-----------------*/
-      $(function(){
-          var gd_und = $('#gd-und');   
-
-          gd_und.click(function(){
-            $('html').animate({scrollTop:0});
-          });
-
-      });// /ガイドアンダー
-
-  /*ガイド　ミドル-----------------*/
-       $(function(){
-          var target = $('#gd-mid');
-          var el = target.offset().top;
-          $(window).scroll(function(){
-            var scrollM = $(this).scrollTop();
-            if (scrollM > el){
-              target.slideDown();
-            }
-
-          });
-        });// /ガイドアンダー
+      gd_top.click(function(){
+      $('html').animate({scrollTop:re_position});
+      });
 
 
-});//---/function()---
+  });/*ガイド　トップ*/
+
+  /*ガイド　アンダー-------------------------------*/
+  $(function() {
+
+      var gd_und = $('#gd-und');   
+
+      gd_und.click(function(){
+      $('html').animate({scrollTop:0});
+      });
+
+      gd_und.hover(function() {
+ 
+      //マウスを乗せたら色が変わる
+        $(this).css({'transform': 'rotateX(180deg)',
+      'transition':'all 200ms 0s ease'});
+     
+      //ここにはマウスを離したときの動作を記述
+      }, function() {
+     
+      //色指定を空欄にすれば元の色に戻る
+        $(this).css('transform', 'rotateX(0deg)');
+     
+      });
+
+  });/*ガイド　アンダー*/
+
+  /*ガイド　ミドル-------------------------------*/
+  $(function() {
+
+      var target = $('#gd-mid');
+      var el = target.offset().top;
+      $(window).scroll(function(){
+      var scrollM = $(this).scrollTop();
+      if (scrollM > el){
+      target.slideDown();
+      }
+
+      });/*ガイド　ミドル*/
+
+  });
+
+});
