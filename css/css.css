@@ -808,7 +808,6 @@ footer .button-img{
   position: fixed;
   top: 30px;
   right: 7px;
-  border: 1px solid #008bbb;
 }
 .gaide-top{
   width: 250px;
@@ -878,33 +877,7 @@ footer .button-img{
     width: 90px;
     cursor: pointer;
   }
-  /*
-  #gd-und{
-    transform: rotateX(0deg);
-    transition:all 1000ms 0s  ease;
-  }
-  #gd-und:hover{
-    transform: rotateX(180deg);
-    transition:all 1000ms 0s  ease;
-  }
 
-  #gd-und{
-    animation:0.2s linear initial normal forwards rotation2;
-  }
- 
-  #gd-und:hover{
-    animation:0.2s linear initial normal forwards rotation1;
-  }
-
-  @keyframes rotation1{
-    0%{transform:rotateX(0);}
-    100%{transform: rotateX(180deg);}
-  }
-  @keyframes rotation2{
-    0%{transform:rotateX(180deg) ;}
-    100%{transform: rotateX(0deg);}
-  }
-*/
  .gaide-under p{
    font-size: 0.95rem;
    font-family: Quicksand,sans-serif;
@@ -917,6 +890,8 @@ footer .button-img{
    text-align: center;
    letter-spacing: 0.8px;
  }
+
+
 
 
  /*モバイル版-------------------------------*/
@@ -1567,6 +1542,7 @@ footer .button-img{
       .gaide-middle-button{
         font-size: .8rem;
         display: block;
+        cursor: pointer;
         height: 40px;
         width: 82vmin;
         margin-top: 10px;
@@ -1616,13 +1592,14 @@ footer .button-img{
       }
       .gaide-under img{
         width: 66px;
-        border: 1px solid #008bbb;
       }
       .gaide-under p{
         font-size: .8rem;
         top: 32px;
         left: 16px;
       }
+
+
 
     }/* /media */
 
