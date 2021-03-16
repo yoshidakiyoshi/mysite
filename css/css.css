@@ -1525,7 +1525,7 @@ footer .button-img{
       .gaide-top{
         display: none;
       }
-      /*ガイドボタン　SP　中部*/
+      /*ガイドボタン　SP　ミドル*/
       #gd-mid{
         display: none;
       }
@@ -1584,7 +1584,7 @@ footer .button-img{
         right: 18px;
       }
 
-      /*ガイドボタン　下部*/
+      /*ガイドボタン　アンダー*/
       .gd-und-position{
         position: absolute;
         top: -32px;
