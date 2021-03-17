@@ -15,6 +15,7 @@ a{
   max-width: 1000px;
   min-width: 1000px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
  /*ヘッダー-----------------------------*/
@@ -23,6 +24,7 @@ a{
   justify-content: space-between;
   height: 50px;
   margin-bottom: 50px;
+  border: 1px solid red;
 }
 .headerLeft{
   padding-top: 30px;
@@ -59,6 +61,7 @@ a{
 .top{
   display: flex;
   margin-top: 90px;
+  border: 1px solid red;
 }
 .top-img{
   margin-right:30px ;
@@ -80,6 +83,7 @@ a{
 .info{
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 .info span{
 width: 430px;
@@ -92,10 +96,12 @@ letter-spacing: .1rem;
 .contact {
   display: flex;
   margin-top: 80px;
+  border: 1px solid red;
 }
 .contact_info{
   width: 475px;
   margin-right: 25px;
+  border: 1px solid red;
 }
 .secondary {
   display: flex;
@@ -117,6 +123,7 @@ letter-spacing: .1rem;
   flex-direction: column;
   width: 430px;
   height: 315px;
+  border: 1px solid red;
 }
 .question_info label{
   margin-bottom: 0.5rem;
@@ -213,19 +220,23 @@ textarea{
   border-top: 10px solid #eeedea;
   border-bottom: 10px solid #eeedea;
   background-color: #ffA800;
+  border: 1px solid red;
 }
 .nc-container{ 
   display: flex;
+  border: 1px solid red;
 }
 .nav-icon{  
   position: relative;
   margin-top: 30px;
   margin-left: 120px;
+  border: 1px solid red;
 }
 
 .nav-menu{
   width: 570px;
   margin-top: 35px;
+  border: 1px solid red;
 }
 .nav-menu-list{  
   list-style: none;
@@ -242,6 +253,7 @@ textarea{
 /*NAV画像と文章*/
 .pc {display: block;}
 .sp {display: none;}
+
 .nv-p-pc{
   font-weight: bold;
   color: #ffa800;
@@ -262,6 +274,7 @@ textarea{
   font-size: 2rem;
   letter-spacing: 5px;
   text-align: center;
+  border: 1px solid red;
 }
 .section-menu{
   display: flex;
@@ -270,7 +283,8 @@ textarea{
 }
 .section-content{
   width: 285px;
-  margin-right: 85px;    
+  margin-right: 85px;
+  border: 1px solid red;
 }
 .section-content h2{  
   font-size: 3rem;
@@ -286,6 +300,7 @@ textarea{
   white-space: normal;
   text-align: justify;  
   min-width: 285px;
+  border: 1px solid red;
   
 }
 .section-content ul{  
@@ -319,6 +334,7 @@ textarea{
 /*大きい実績*/
 .performance-content{
   border-top: 10px solid #eeedea;
+  border: 1px solid red;
 }
 .performance-content h2{
   font-size: 2.125rem;
@@ -335,6 +351,7 @@ textarea{
 
 .performance-menu img{
   box-shadow:0 5px 5px 0 rgba(201, 188, 188, 0.637);
+  border: 1px solid red;
 }
 .performance-menu-text{
   max-width: 300px;
@@ -666,8 +683,9 @@ textarea{
 .request-content .question_info{
   width:600px ;
   height: 240px;
-  margin-left: 245px;
+  margin-left: 225px;
   flex-direction: row;
+  border: 1px solid red;
 }
 .request-content textarea{
   width: 430px;
@@ -680,6 +698,11 @@ textarea{
   text-align: left;
   margin-bottom: 80px;
   padding-left:285px ;
+
+}
+.tel-se-box{
+  width:600px ;
+  margin-left: -50px;
   display: flex;
 }
 .tel-section img{
