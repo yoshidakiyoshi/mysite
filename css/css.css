@@ -14,8 +14,7 @@ a{
 .wrapper{
   max-width: 1000px;
   min-width: 1000px;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 0 auto;  
 }
 
  /*ヘッダー-----------------------------*/
@@ -23,8 +22,7 @@ a{
   display: flex;
   justify-content: space-between;
   height: 50px;
-  margin-bottom: 50px;
-  border: 1px solid red;
+  margin-bottom: 50px;  
 }
 .headerLeft{
   padding-top: 30px;
@@ -60,8 +58,7 @@ a{
 
 .top{
   display: flex;
-  margin-top: 90px;
-  border: 1px solid red;
+  margin-top: 90px;  
 }
 .top-img{
   margin-right:30px ;
@@ -82,8 +79,7 @@ a{
 }
 .info{
   display: flex;
-  flex-direction: column;
-  border: 1px solid red;
+  flex-direction: column;  
 }
 .info span{
 width: 430px;
@@ -95,13 +91,11 @@ letter-spacing: .1rem;
 
 .contact {
   display: flex;
-  margin-top: 80px;
-  border: 1px solid red;
+  margin-top: 80px;  
 }
 .contact_info{
   width: 475px;
-  margin-right: 25px;
-  border: 1px solid red;
+  margin-right: 25px;  
 }
 .secondary {
   display: flex;
@@ -122,8 +116,7 @@ letter-spacing: .1rem;
   display: flex;
   flex-direction: column;
   width: 430px;
-  height: 315px;
-  border: 1px solid red;
+  height: 315px;  
 }
 .question_info label{
   margin-bottom: 0.5rem;
@@ -219,24 +212,20 @@ textarea{
   height: 245px;
   border-top: 10px solid #eeedea;
   border-bottom: 10px solid #eeedea;
-  background-color: #ffA800;
-  border: 1px solid red;
+  background-color: #ffA800;  
 }
 .nc-container{ 
-  display: flex;
-  border: 1px solid red;
+  display: flex;  
 }
 .nav-icon{  
   position: relative;
   margin-top: 30px;
-  margin-left: 120px;
-  border: 1px solid red;
+  margin-left: 120px;  
 }
 
 .nav-menu{
   width: 570px;
-  margin-top: 35px;
-  border: 1px solid red;
+  margin-top: 35px;  
 }
 .nav-menu-list{  
   list-style: none;
@@ -274,7 +263,7 @@ textarea{
   font-size: 2rem;
   letter-spacing: 5px;
   text-align: center;
-  border: 1px solid red;
+  
 }
 .section-menu{
   display: flex;
@@ -284,23 +273,24 @@ textarea{
 .section-content{
   width: 285px;
   margin-right: 85px;
-  border: 1px solid red;
+  
 }
 .section-content h2{  
   font-size: 3rem;
   font-family: Quicksand,sans-serif;
   color: #ff9600;
+  margin-bottom: 5px;
   letter-spacing: 1px;
 }
 .section-content h3{
   font-size: 1.45rem;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 .section-content p{
   white-space: normal;
   text-align: justify;  
   min-width: 285px;
-  border: 1px solid red;
+  
   
 }
 .section-content ul{  
@@ -334,7 +324,7 @@ textarea{
 /*大きい実績*/
 .performance-content{
   border-top: 10px solid #eeedea;
-  border: 1px solid red;
+  
 }
 .performance-content h2{
   font-size: 2.125rem;
@@ -347,11 +337,12 @@ textarea{
   display: flex;
   margin-bottom: 80px;
   line-height: 1.2;
+  
 }
 
 .performance-menu img{
   box-shadow:0 5px 5px 0 rgba(201, 188, 188, 0.637);
-  border: 1px solid red;
+  
 }
 .performance-menu-text{
   max-width: 300px;
@@ -359,6 +350,7 @@ textarea{
   text-align: left;
   padding-top: 20px;
   padding-left: 10px;
+  
 }
 .monotukuri-text,
 .aisei-text{
@@ -481,6 +473,7 @@ textarea{
   background: #272727;
   border-top:10px solid #eeedea;
   border-bottom:10px solid #eeedea;
+  
 }
 .announce-text{
   width: 50%;
@@ -489,6 +482,7 @@ textarea{
   padding-left: 15px;
   padding-right: 20px;
   float: left;
+  
 }
 .announce-text h2{
   font-weight: bold;
@@ -510,6 +504,7 @@ textarea{
   background-image: url(../img/image-kiritori.jpg); 
   border-left:10px solid #eeedea;  
   float: right; 
+  
 }
 .r-an-img{
   display: none;
@@ -543,10 +538,12 @@ textarea{
 /*QUESTION-----------------------------*/
 .question-section{
   margin: 0 auto;
+  
 }
 .question-section h1{
   text-align: center;
   margin-top: 80px;
+  
 }
 #container{
   width: 880px;
@@ -556,11 +553,13 @@ textarea{
   display: grid;
   grid-template-rows: 100px 50px;
   grid-template-columns: 150px 1fr;
+  
 }
 #itemA{
   grid-row: 1/3;
   grid-column: 1;
   margin-left: 90px;
+  
 }
 #itemB{
   margin-top: 10px;
@@ -568,6 +567,7 @@ textarea{
   height: 30px;
   grid-row: 1;
   grid-column: 2;
+  
 }
 #itemC{
   height: 115px;
@@ -629,6 +629,10 @@ textarea{
 }
 .item3{
   margin-left:-3px ;
+  width:230px ;
+}
+.item3 h3{
+  width:230px ;
 }
 .r-question{
   display: none;
@@ -685,7 +689,7 @@ textarea{
   height: 240px;
   margin-left: 225px;
   flex-direction: row;
-  border: 1px solid red;
+  
 }
 .request-content textarea{
   width: 430px;
@@ -704,6 +708,7 @@ textarea{
   width:600px ;
   margin-left: -50px;
   display: flex;
+  border: 1px solid #008bbb;
 }
 .tel-section img{
   width: 125px;
@@ -994,6 +999,8 @@ footer .button-img{
         line-height: 1.35;
       }
       .info-s-1{
+        display: block;
+        width: 100% !important;
         margin-top: 10px;
       }
       /*CONTACT---------------------*/
@@ -1074,7 +1081,7 @@ footer .button-img{
       }
       /*NAV---------------------*/
       .nav-content{
-        height: 300px;
+        height: 280px;
         border-top: 0.1px solid #eeedea; 
       }
       .nc-container{
@@ -1083,6 +1090,7 @@ footer .button-img{
       .nav-icon{
         position: initial; 
         margin-left:38% ;
+        border: 1px solid #008bbb;
       }
       /*NAV画像*/
       .pc {display: none;}
@@ -1105,11 +1113,13 @@ footer .button-img{
       }
       .nav-menu{
         width:100% ;
-        height: 105px;
+        height: 150px;
         margin-top: 12px;
+        border: 1px solid #008bbb;
       }
       .nav-menu-list{
         display: flex;
+        padding:0 5px;
         flex-wrap: wrap;
         justify-content: center;
       }
@@ -1118,12 +1128,12 @@ footer .button-img{
         font-size: .765rem; 
         margin: 5px;
         padding:3px 10px ;   
-        float: none;  
+        float: unset;  
         white-space: nowrap;      
       }
       /*FEATURES---------------------*/
       .features-section{
-        margin-top: 20px;
+        margin-top: 40px;
       }
       .section-title{
         font-size: 1.45rem;
@@ -1456,6 +1466,10 @@ footer .button-img{
         margin: 50px 20px 60px;
         padding-left:unset;
         justify-content: space-between;
+      }
+      .tel-se-box{
+        width: 100%;
+        margin-left: unset;
       }
       .tel-text{
         margin-left:unset;
