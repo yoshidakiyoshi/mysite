@@ -917,6 +917,8 @@ footer .button-img{
    letter-spacing: 0.8px;
  }
 
+
+
  /*モバイル版-------------------------------*/
             @media(max-width:640px){
               /*共通部分---------------------*/
@@ -925,10 +927,10 @@ footer .button-img{
                 border:none;
               }
               header{
-                min-width: 480px;
+                min-width: 450px;
               }
               .wrapper{
-                min-width: 480px;
+                min-width: 400px;
               }
               .r-box{
                 border: 10px solid #eeedea;
@@ -1085,7 +1087,6 @@ footer .button-img{
               .nav-icon{
                 position: initial; 
                 margin-left:38% ;
-                border: 1px solid #008bbb;
               }
               /*NAV画像*/
               .pc {display: none;}

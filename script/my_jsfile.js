@@ -1,15 +1,25 @@
 $(function(){
 
-  $(function(){
-    //630px~640px
+
+   
+    //ウインドウがリサイズされたら発動
+    $(window).resize(function() {
+       
+      var w = $(window).width();
+      var navh = $('#nav-height');
+      var x = 610;
+      var y = 630;
+      if (w < x){
+        navh.css('height','290');
+      } else if (w >= y){
+        navh.css('height','250');
+      } else {
+        navh.css('height','245');
+      }
+    
+    });
+
   
-    var window_width = $(window).width();
-    var navH = $('#nav-height');
-    if (window_width > 615 && window_width < 630){
-      navH.css('height','240px');
-    } 
-  
-  });
 
   /*ガイド　トップ------------------------------*/
   $(function(){
