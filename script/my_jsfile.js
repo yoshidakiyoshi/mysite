@@ -1,5 +1,16 @@
 $(function(){
 
+  $(function(){
+    //630px~640px
+  
+    var window_width = $(window).width();
+    var navH = $('#nav-height');
+    if (window_width > 615 && window_width < 630){
+      navH.css('height','240px');
+    } 
+  
+  });
+
   /*ガイド　トップ------------------------------*/
   $(function(){
 

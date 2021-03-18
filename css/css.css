@@ -43,8 +43,8 @@ a{
   left: 215px;
 }
 .subTitle{  
-  width: 320px;
-  font-size: 0.825rem;
+  width: 420px;
+  font-size: .9rem;
   letter-spacing: 0.12rem;
   position: absolute;
   left:250px ;
@@ -900,12 +900,10 @@ footer .button-img{
   .gaide-under{
     position: relative;
   }
-
   .gaide-under img{
     width: 90px;
     cursor: pointer;
   }
-
  .gaide-under p{
    font-size: 0.95rem;
    font-family: Quicksand,sans-serif;
@@ -919,724 +917,722 @@ footer .button-img{
    letter-spacing: 0.8px;
  }
 
-
-
-
  /*モバイル版-------------------------------*/
-    @media(max-width:640px){
-      /*共通部分---------------------*/
-      body{
-        min-width: 480px;
-        border:none;
-      }
-      header{
-        min-width: 460px;
-      }
-      .wrapper{
-        min-width: 400px;
-      }
-      .r-box{
-        border: 10px solid #eeedea;
+            @media(max-width:640px){
+              /*共通部分---------------------*/
+              body{
+                min-width: 480px;
+                border:none;
+              }
+              header{
+                min-width: 480px;
+              }
+              .wrapper{
+                min-width: 480px;
+              }
+              .r-box{
+                border: 10px solid #eeedea;
 
-      }
-      /*ヘッダー---------------------*/
+              }
+              /*ヘッダー---------------------*/
 
-      .headerLeft{
-        margin-left: -10px;
-        padding-top: 10px;
-        padding-right: 10px;
-        position: unset;
-        display: flex;
-      }
-      .subTitle{
-        width: 45vw;
-        font-size: 3.2vw;
-        letter-spacing: 1px;
-        line-height: 1.1;
-        position: unset;
-      }
-      .subTitle span::before{
-        content: '\A';
-        white-space: pre;
-      }      
-      .logo{
-        width: 43vw;
-        height: 5.5vmin;  
-        position: unset;   
-      }
-      .dash{
-        display: none;
-        position: unset;
-      }
-      .headerRight img{
-        display: none;        
-      }
-      /*TOP---------------------*/
-      .top{
-        flex-direction: column;
-        margin-top: 25px;
-      }
-      .top-img{
-        width: 72vw;
-        height: 55vmin;
-        margin-left: 45px;
-        margin-top: -16px;
-      }
-      .introduction{
-        margin-top: 18px;
-      }
-      .introduction p{
-        font-size: 1.3rem;
-        width: 100%;
-        letter-spacing: 2px;        
-        line-height:1.25;
-        margin-top: initial;
-        margin-bottom: 20px;
-      }
-      .info span{
-        font-size: 0.8rem;
-        letter-spacing: 1.5px;
-        line-height: 1.35;
-      }
-      .info-s-1{
-        display: block;
-        width: 100% !important;
-        margin-top: 10px;
-      }
-      /*CONTACT---------------------*/
-      .contact{
-        flex-direction: column;
-        margin: 30px 20px 0;
-      }
-      .contact_info{
-        width: 100%;
-      }
-      .contact_info label,
-      .contact_info span{
-      text-align: left;
-      margin-right: none;
-      letter-spacing: 0px;
-      }
-      .secondary{
-        width: 100%;
-        min-width: none;
-        flex-direction: column;
-      }
-      .tertiary{
-        display: initial;
-      }
-      .Mandatory{
-        margin-left: -15px;
-      }
-      .infomation{
-        height: 41px;
-      }
-      .radio_button div{
-        margin-top: 10px;
-      }
-      .question_info{
-        width: 100%;
-        height: 190px;
-        margin-top: -10px;
-      }
-      .question_info label{
-        margin-bottom: 3px !important;
-      }
-      textarea::placeholder{
-        font-size: 0.825rem;
-        max-width: none;
-        min-width: none;
-      }
-      /*fromボタン*/
-      .button-content{
-        width: 100%;
-        height: 50px;
-        margin-top: 35px;
-        margin-bottom:32px;
-      }
-      .button{        
-        font-size: 0.8rem;        
-        width: 363px;
-        height: 40px;
-        line-height: 40px;        
-        font-weight: normal;
-      }
-      .button:hover{
-        font-size: 0.775rem;
-        width: 352px;
-        height: 39px;
-        line-height: 39px;
-      }
-      .button span{
-        top:-1px;
-        right: 18px;
-        z-index: 2;
-      }
-      .button-img{
-        width: 25px;
-        height: 22px;
-        position: absolute;
-        top: 8px;
-        right: 10px;
-      }
-      /*NAV---------------------*/
-      .nav-content{
-        height: 280px;
-        border-top: 0.1px solid #eeedea; 
-      }
-      .nc-container{
-        display: initial;        
-      }
-      .nav-icon{
-        position: initial; 
-        margin-left:38% ;
-        border: 1px solid #008bbb;
-      }
-      /*NAV画像*/
-      .pc {display: none;}
-      .sp {
-        display: block;
-        width:105px ;
-        height: 68px;
-      }
-      .nv-p-pc{
-        display: none;
-      }
-      .nv-p-sp{
-        font-size: 0.95rem;
-        display: block;
-        font-weight: bold;
-        color: #fff;
-        line-height: 1.1rem;
-        margin-top: 20px;
-        text-align: center;
-      }
-      .nav-menu{
-        width:100% ;
-        height: 150px;
-        margin-top: 12px;
-        border: 1px solid #008bbb;
-      }
-      .nav-menu-list{
-        display: flex;
-        padding:0 5px;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .nav-menu-list li{  
-        width: fit-content;
-        font-size: .765rem; 
-        margin: 5px;
-        padding:3px 10px ;   
-        float: unset;  
-        white-space: nowrap;      
-      }
-      /*FEATURES---------------------*/
-      .features-section{
-        margin-top: 40px;
-      }
-      .section-title{
-        font-size: 1.45rem;
-        letter-spacing: 3px;
-      }
-      .section-menu{
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 30px;
-      }
-      .section-content{
-        width: 100%;
-        margin-right: unset;
-        margin-bottom: 10px;
-        padding:0 20px;
-      }
-      .section-content h2{
-        font-size: 2.5rem;
-      }
-      .section-content h3{
-        font-size: 1.35rem;
-        letter-spacing: 1px;
-      }
-      .section-content p{
-        font-size: .8rem;
-        letter-spacing: 0.8px;
-      }
-      .section-content ul{  
-        font-size: 0.78rem;
-      }
-      .section-content li::before{
-        width: 5px;
-        height: 5px;
-      }
-      .section-content p,
-      .section-content li{
-        line-height: 1.4;
-      }
-      /*FEATURES ボタン*/
-      .features-section .button-content{
-        display: none;
-      }
-      /*PERFORMANCE-----------------------------*/
+              .headerLeft{
+                margin-left: -10px;
+                padding-top: 10px;
+                padding-right: 10px;
+                position: unset;
+                display: flex;
+              }
+              .subTitle{
+                width: 45vw;
+                font-size: 3.2vw;
+                letter-spacing: 1px;
+                line-height: 1.1;
+                position: unset;
+              }
+              .subTitle span::before{
+                content: '\A';
+                white-space: pre;
+              }      
+              .logo{
+                width: 43vw;
+                height: 5.5vmin;  
+                position: unset;   
+              }
+              .dash{
+                display: none;
+                position: unset;
+              }
+              .headerRight img{
+                display: none;        
+              }
+              /*TOP---------------------*/
+              .top{
+                flex-direction: column;
+                margin-top: 25px;
+              }
+              .top-img{
+                width: 72vw;
+                height: 55vmin;
+                margin-left: 45px;
+                margin-top: -16px;
+              }
+              .introduction{
+                margin-top: 18px;
+              }
+              .introduction p{
+                font-size: 1.3rem;
+                width: 100%;
+                letter-spacing: 2px;        
+                line-height:1.25;
+                margin-top: initial;
+                margin-bottom: 20px;
+              }
+              .info span{
+                font-size: 0.8rem;
+                letter-spacing: 1.5px;
+                line-height: 1.35;
+              }
+              .info-s-1{
+                display: block;
+                width: 100% !important;
+                margin-top: 10px;
+              }
+              /*CONTACT---------------------*/
+              .contact{
+                flex-direction: column;
+                margin: 30px 20px 0;
+              }
+              .contact_info{
+                width: 100%;
+              }
+              .contact_info label,
+              .contact_info span{
+              text-align: left;
+              margin-right: none;
+              letter-spacing: 0px;
+              }
+              .secondary{
+                width: 100%;
+                min-width: none;
+                flex-direction: column;
+              }
+              .tertiary{
+                display: initial;
+              }
+              .Mandatory{
+                margin-left: -15px;
+              }
+              .infomation{
+                height: 41px;
+              }
+              .radio_button div{
+                margin-top: 10px;
+              }
+              .question_info{
+                width: 100%;
+                height: 190px;
+                margin-top: -10px;
+              }
+              .question_info label{
+                margin-bottom: 3px !important;
+              }
+              textarea::placeholder{
+                font-size: 0.825rem;
+                max-width: none;
+                min-width: none;
+              }
+              /*fromボタン*/
+              .button-content{
+                width: 100%;
+                height: 50px;
+                margin-top: 35px;
+                margin-bottom:32px;
+              }
+              .button{        
+                font-size: 0.8rem;        
+                width: 363px;
+                height: 40px;
+                line-height: 40px;        
+                font-weight: normal;
+              }
+              .button:hover{
+                font-size: 0.775rem;
+                width: 352px;
+                height: 39px;
+                line-height: 39px;
+              }
+              .button span{
+                top:-1px;
+                right: 18px;
+                z-index: 2;
+              }
+              .button-img{
+                width: 25px;
+                height: 22px;
+                position: absolute;
+                top: 8px;
+                right: 10px;
+              }
+              /*NAV---------------------*/
+              .nav-content{
+                height: 290px;
+                border-top: 0.1px solid #eeedea;
+              }
+              .nc-container{
+                display: initial;        
+              }
+              .nav-icon{
+                position: initial; 
+                margin-left:38% ;
+                border: 1px solid #008bbb;
+              }
+              /*NAV画像*/
+              .pc {display: none;}
+              .sp {display: block;}
+              
+              .sp {
+                width:105px ;
+                height: 68px;
+              }
+              .nv-p-pc{
+                display: none;
+              }
+              .nv-p-sp{
+                font-size: 0.95rem;
+                display: block;
+                font-weight: bold;
+                color: #fff;
+                line-height: 1.1rem;
+                margin-top: 20px;
+                text-align: center;
+              }
+              .nav-menu{
+                width:100% ;
+                height: 50px;
+                margin-top: 12px;
+              }
+              .nav-menu-list{
+                display: flex;
+                padding:0 5px;
+                flex-wrap: wrap;
+                justify-content: center;
+              }
+              .nav-menu-list li{               
+                font-size: .765rem;
+                color:#fff; 
+                width: fit-content;
+                margin: 5px;
+                padding:3px 10px ;   
+                float: unset;  
+                white-space: nowrap;      
+              }
+              /*FEATURES---------------------*/
+              .features-section{
+                margin-top: 40px;
+              }
+              .section-title{
+                font-size: 1.45rem;
+                letter-spacing: 3px;
+              }
+              .section-menu{
+                flex-direction: column;
+                margin-top: 10px;
+                margin-bottom: 30px;
+              }
+              .section-content{
+                width: 100%;
+                margin-right: unset;
+                margin-bottom: 10px;
+                padding:0 20px;
+              }
+              .section-content h2{
+                font-size: 2.5rem;
+              }
+              .section-content h3{
+                font-size: 1.35rem;
+                letter-spacing: 1px;
+              }
+              .section-content p{
+                font-size: .8rem;
+                letter-spacing: 0.8px;
+              }
+              .section-content ul{  
+                font-size: 0.78rem;
+              }
+              .section-content li::before{
+                width: 5px;
+                height: 5px;
+              }
+              .section-content p,
+              .section-content li{
+                line-height: 1.4;
+              }
+              /*FEATURES ボタン*/
+              .features-section .button-content{
+                display: none;
+              }
+              /*PERFORMANCE-----------------------------*/
 
-      /*大きい実績*/
-      .performance-content h2{
-        font-size: 1.5rem;
-        margin-top: 35px;
-        margin-bottom: 25px;
-        text-align: center;
-      }
-      
-      .performance-menu{
-        flex-direction: column;
-        margin-bottom: 45px;
-        line-height: 1.2;
-      }
-      .performance-menu img{
-        margin: 0 20px;
-        order: 1;
-      }
-      .performance-menu-text{ 
-        max-width: unset;
-        min-width: unset;      
-        text-align: initial;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 25px;
-        order: 2;
-      }
-      .monotukuri-text,
-      .aisei-text{
-        margin-left: unset;
-      }
-      .sb-text{
-        margin-right: unset;
-      }
-      .performance-title{
-        font-size: 1.2rem;
-        margin-bottom: 10px;  
-      }
-      .perfonmance-subtitle{
-        font-size: 1.2rem;
-      }
-      .pf-f-list2{
-        margin-left: 20px;
-      }
-      .pf-f-list2 li{
-        font-size: 0.775rem;
-        margin-bottom: 13px;
-      }
-      .performance-list{ 
-        font-size: 0.8rem;
-        width: 100%;
-        margin-top: 10px;
-        line-height: 1.4;
-      }
-      .performance-list li::before{
-        top: 16px;
-      }
-      .customer-voice{
-        font-size: 0.8rem;
-        margin-top:40px;
-      }
-      .sb-text,
-      .aisei-text{
-       margin-top:unset;
-       height: unset;
-      }
-      /*小さい実績*/
-      .grid-box{
-        display: none;
-      }
-      .r-pf-mini-box{
-        display: block;
-        margin: 0 20px;
-      }
-      .r-pf-menu{
-        margin-bottom:40px ;
-      }
-      .r-pf-title{
-        font-size: 1rem;
-        font-weight: bolder;
-        color: #ff9600;
-      }
-      .r-pf-subtitle{
-        font-size: 0.95rem;
-        font-weight: bolder;
-        margin-top: 8px;
-      }
-      .r-pf-title,
-      .r-pf-subtitle{        
-        letter-spacing: 1px;
-      }
-      .r-pf-menu-text{
-        display: flex;
-        margin-top: 10px;
-      }
-      .r-pf-menu-text img{
-        width: 38vw;
-        height: 32vmin;
-      }
-      .r-pf-list-box{
-        margin-left: 20px;
-      }
-      .r-pf-list-box ul{
-        list-style: none;
-        font-size: .75rem;
-      }
-      .r-pf-f-list2{
-        margin-top: 10px;
-      }
-      .r-pf-f-list1-li2{
-        color: #5e8adb;
-        text-decoration: underline;
-      }
-      .r-pf-f-list1-li2-2,
-      .r-pf-f-list2-li2{
-        color: #808080;
-        opacity: .8;
-      }
-      .r-pf-f-list1-li1,
-      .r-pf-f-list2-li1{
-        font-family:'Quicksand', sans-serif;
-        letter-spacing: 1px;
-        font-weight: bold;
-      }
-      /*PERFORMANCE-ANNOUNCE*/
-      .performance-announce{
-        height: 245px;
-        background: #272727;
-        border-top:10px solid #eeedea;
-        border-bottom:none;
-      }
-      .announce-text{
-        width:100%;
-        padding-top: 45px;
-        padding-left: 15px;
-        padding-right: 20px;        
-        text-align: center;
-      }
-      .announce-text h2{
-        font-size: 1.25rem;
-      }
-      .announce-text p{
-        font-size: 1rem;
-        width: 100%;
-        margin-top: 20px;
-        line-height: 1.25;
-      }
-      .an-img{
-        display: none;
-      }
-      .r-an-img{
-        display: block;
-        width: 100%;
-        height: 59vmin;
-        background-color: #272727;
-        background-image: url(../img/spph.png); 
-        background-size: cover;
-        border-left:none;
-        border-bottom: 10px solid #eeedea;
-      }
-      /*アナウンス　ボタン*/
+              /*大きい実績*/
+              .performance-content h2{
+                font-size: 1.5rem;
+                margin-top: 35px;
+                margin-bottom: 25px;
+                text-align: center;
+              }
+              
+              .performance-menu{
+                flex-direction: column;
+                margin-bottom: 45px;
+                line-height: 1.2;
+              }
+              .performance-menu img{
+                margin: 0 20px;
+                order: 1;
+              }
+              .performance-menu-text{ 
+                max-width: unset;
+                min-width: unset;      
+                text-align: initial;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 25px;
+                order: 2;
+              }
+              .monotukuri-text,
+              .aisei-text{
+                margin-left: unset;
+              }
+              .sb-text{
+                margin-right: unset;
+              }
+              .performance-title{
+                font-size: 1.2rem;
+                margin-bottom: 10px;  
+              }
+              .perfonmance-subtitle{
+                font-size: 1.2rem;
+              }
+              .pf-f-list2{
+                margin-left: 20px;
+              }
+              .pf-f-list2 li{
+                font-size: 0.775rem;
+                margin-bottom: 13px;
+              }
+              .performance-list{ 
+                font-size: 0.8rem;
+                width: 100%;
+                margin-top: 10px;
+                line-height: 1.4;
+              }
+              .performance-list li::before{
+                top: 16px;
+              }
+              .customer-voice{
+                font-size: 0.8rem;
+                margin-top:40px;
+              }
+              .sb-text,
+              .aisei-text{
+              margin-top:unset;
+              height: unset;
+              }
+              /*小さい実績*/
+              .grid-box{
+                display: none;
+              }
+              .r-pf-mini-box{
+                display: block;
+                margin: 0 20px;
+              }
+              .r-pf-menu{
+                margin-bottom:40px ;
+              }
+              .r-pf-title{
+                font-size: 1rem;
+                font-weight: bolder;
+                color: #ff9600;
+              }
+              .r-pf-subtitle{
+                font-size: 0.95rem;
+                font-weight: bolder;
+                margin-top: 8px;
+              }
+              .r-pf-title,
+              .r-pf-subtitle{        
+                letter-spacing: 1px;
+              }
+              .r-pf-menu-text{
+                display: flex;
+                margin-top: 10px;
+              }
+              .r-pf-menu-text img{
+                width: 38vw;
+                height: 32vmin;
+              }
+              .r-pf-list-box{
+                margin-left: 20px;
+              }
+              .r-pf-list-box ul{
+                list-style: none;
+                font-size: .75rem;
+              }
+              .r-pf-f-list2{
+                margin-top: 10px;
+              }
+              .r-pf-f-list1-li2{
+                color: #5e8adb;
+                text-decoration: underline;
+              }
+              .r-pf-f-list1-li2-2,
+              .r-pf-f-list2-li2{
+                color: #808080;
+                opacity: .8;
+              }
+              .r-pf-f-list1-li1,
+              .r-pf-f-list2-li1{
+                font-family:'Quicksand', sans-serif;
+                letter-spacing: 1px;
+                font-weight: bold;
+              }
+              /*PERFORMANCE-ANNOUNCE*/
+              .performance-announce{
+                height: 245px;
+                background: #272727;
+                border-top:10px solid #eeedea;
+                border-bottom:none;
+              }
+              .announce-text{
+                width:100%;
+                padding-top: 45px;
+                padding-left: 15px;
+                padding-right: 20px;        
+                text-align: center;
+              }
+              .announce-text h2{
+                font-size: 1.25rem;
+              }
+              .announce-text p{
+                font-size: 1rem;
+                width: 100%;
+                margin-top: 20px;
+                line-height: 1.25;
+              }
+              .an-img{
+                display: none;
+              }
+              .r-an-img{
+                display: block;
+                width: 100%;
+                height: 59vmin;
+                background-color: #272727;
+                background-image: url(../img/spph.png); 
+                background-size: cover;
+                border-left:none;
+                border-bottom: 10px solid #eeedea;
+              }
+              /*アナウンス　ボタン*/
 
-      .an-button-content{
-        width:100%x;
-      }
-      .performance-announce .button-img{
-        opacity: 0.3;
-      }
-      .an-button{
-        width: 250px;
-        margin-left: unset;
-      }
-      .an-button:hover{  
-        width: 242px;
-      }
-      /*QUESTION-----------------------------*/
+              .an-button-content{
+                width:100%x;
+              }
+              .performance-announce .button-img{
+                opacity: 0.3;
+              }
+              .an-button{
+                width: 250px;
+                margin-left: unset;
+              }
+              .an-button:hover{  
+                width: 242px;
+              }
+              /*QUESTION-----------------------------*/
 
-      .question-section h1{
-        font-size: 1.5rem;
-        margin-top: 50px;
-        letter-spacing: 2px;
-      }
-      #container{
-        display: none;
-      }
-      .r-question{
-        display: block;
-        margin-top: 20px;
-        padding: 0 20px;
-      }
-      .r-question-menu{        
-        margin-bottom: 30px;
-      }
-      .r-q-flex{
-        display: flex;
-      }
-      .r-q-flex h2{
-        font-size: .95rem;
-        margin-top: 3px;
-      }
-      .r-q-text{
-        background: #eeedea;
-        padding: 22px 20px;
-      }
-      .r-q-text h3{
-        font-size: .95rem;
-      }
-      .r-q-text p{
-        font-size: .8rem;
-        margin-top: 8px;
-      }
-      .r-q-flex h2,
-      .r-q-text h3,
-      .r-q-text p{
-        letter-spacing: 1px;
-      }
-      /*request-nav -----------------------------*/
-      .nav-flex{
-        display: none;
-      }
-      .request-nav{
-        height: 398px;
-        border-top: 10px solid #eeedea;
-      }
-      .r-req-nv{
-        display: block;        
-        letter-spacing: 1.1px;
-      }
-      .r-req-nv h2{
-        color: #fff;
-        margin-top: 35px;
-        text-align: center;
-      }
-      .r-req-flex{
-        display: flex;
-        margin: 10px 20px 0;
-      }
-      .r-req-text{
-        color: #fff;
-        margin: 8px 0 27px;
-      }
-      .r-req-text h3{
-        font-size: .95rem;
-        margin-bottom: 4px;
-      }
-      .r-req-text p{
-        font-size: .8rem;
-        line-height: 1.35;
-      }
-      /*お問い合わせ----------------------*/
-      .request-content{
-        margin-top: 40px;
-      }
-      .request-content h1{
-        font-size: 1.45rem;
-      }
-      .request-content img{
-        width: 85px;
-        margin-bottom: 10px;
-      }
-      .request-p1,
-      .request-p2{
-        display: none;
-      }
-      .r-request-p1,
-      .r-request-p2{
-        display: block;
-        font-size: .8rem;
-        margin-bottom: 25px;
-      }
-      /*リクエストコンテンツ　コンタクト部分*/
-      .request-content .contact_info,
-      .request-content .question_info{
-        margin-left:unset ;
-      }
-      .request-content .question_info{
-        width: 100%;
-        flex-direction: column;
-      }
-      .request-content textarea{
-        width: 100%;
-        margin-left: unset;
-      }
+              .question-section h1{
+                font-size: 1.5rem;
+                margin-top: 50px;
+                letter-spacing: 2px;
+              }
+              #container{
+                display: none;
+              }
+              .r-question{
+                display: block;
+                margin-top: 20px;
+                padding: 0 20px;
+              }
+              .r-question-menu{        
+                margin-bottom: 30px;
+              }
+              .r-q-flex{
+                display: flex;
+              }
+              .r-q-flex h2{
+                font-size: .95rem;
+                margin-top: 3px;
+              }
+              .r-q-text{
+                background: #eeedea;
+                padding: 22px 20px;
+              }
+              .r-q-text h3{
+                font-size: .95rem;
+              }
+              .r-q-text p{
+                font-size: .8rem;
+                margin-top: 8px;
+              }
+              .r-q-flex h2,
+              .r-q-text h3,
+              .r-q-text p{
+                letter-spacing: 1px;
+              }
+              /*request-nav -----------------------------*/
+              .nav-flex{
+                display: none;
+              }
+              .request-nav{
+                height: 398px;
+                border-top: 10px solid #eeedea;
+              }
+              .r-req-nv{
+                display: block;        
+                letter-spacing: 1.1px;
+              }
+              .r-req-nv h2{
+                color: #fff;
+                margin-top: 35px;
+                text-align: center;
+              }
+              .r-req-flex{
+                display: flex;
+                margin: 10px 20px 0;
+              }
+              .r-req-text{
+                color: #fff;
+                margin: 8px 0 27px;
+              }
+              .r-req-text h3{
+                font-size: .95rem;
+                margin-bottom: 4px;
+              }
+              .r-req-text p{
+                font-size: .8rem;
+                line-height: 1.35;
+              }
+              /*お問い合わせ----------------------*/
+              .request-content{
+                margin-top: 40px;
+              }
+              .request-content h1{
+                font-size: 1.45rem;
+              }
+              .request-content img{
+                width: 85px;
+                margin-bottom: 10px;
+              }
+              .request-p1,
+              .request-p2{
+                display: none;
+              }
+              .r-request-p1,
+              .r-request-p2{
+                display: block;
+                font-size: .8rem;
+                margin-bottom: 25px;
+              }
+              /*リクエストコンテンツ　コンタクト部分*/
+              .request-content .contact_info,
+              .request-content .question_info{
+                margin-left:unset ;
+              }
+              .request-content .question_info{
+                width: 100%;
+                flex-direction: column;
+              }
+              .request-content textarea{
+                width: 100%;
+                margin-left: unset;
+              }
 
-      /*TEL-SECTION-----------------------*/
-      .tel-section{
-        margin: 50px 20px 60px;
-        padding-left:unset;
-        justify-content: space-between;
-      }
-      .tel-se-box{
-        width: 100%;
-        margin-left: unset;
-      }
-      .tel-text{
-        margin-left:unset;
-      }
-      .tel-text h3{
-        font-size: .9rem;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
-      }
-      .tel-text p{
-        font-size: 1.65rem;
-        letter-spacing: .5px;
-        margin-bottom: 10px;
-      }
-      .tel-label label,
-      .tel-span span{
-        margin-bottom: 5px;
-        font-size: .75rem;
-      }
-      .tel-span{
-        margin-left: 13px;
-      }
-      .tel-span a::before{
-        content: '\A';
-        white-space: pre;
-      }
-      .tel-img{
-        display: none;
-      }
-      .r-tel-img{
-        display: block;
-        margin-top: 40px;
-        transform: scale(-1,1);
-        width: 82px !important ;
-        height: 92px;
-      }
-      /*フッター----------------------*/
-      footer{
-        height: 365px;
-        padding: 0 20px;
-      }
-      .footer-logo{
-        padding-top: 42px;  
-        margin-left:unset;
-      }
-       footer .flex{
-        flex-direction: column;
-        justify-content: unset;
-      }
-      footer img{
-        width: 186px;
-      }
-      .footer-text{
-        margin-top: 15px;
-        margin-left: unset;
-      }
-      .label-list li,
-      .co-list li{
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-      }
-      .copyright{
-        margin-top: -8px;
-      }
-      .copyright a::before{
-        content: '\A';
-        white-space: pre;
-      }
-      /*フッター　ボタン*/
-      .footer-bt-content{
-        display: none;
-      }
-      .r-footer-bt-content{
-        display: block;
-        margin-top: 20px !important;
-        margin-left: 22vw !important;      
-        padding: 0 20px;  
-      }
-      .r-footer-bt-content .button{
-        height: 41px;
-        line-height: 41px;        
-      }
-      footer .button:hover{
-        width:176px ;
-        height: 40px;
-      }
-      footer .button-img{
-        top: 9px;
-      }
-      .gaide-top{
-        display: none;
-      }
-      /*ガイドボタン　SP　ミドル*/
-      #gd-mid{
-        display: none;
-      }
-      .gaide-middle{        
-        width: 100%;
-        height: 60px;
-        background-color: #eeedea;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        bottom: 0px;
-      }
-      .gaide-middle-button{
-        font-size: .8rem;
-        display: block;
-        cursor: pointer;
-        height: 40px;
-        width: 82vmin;
-        margin-top: 10px;
-        line-height: 40px;
-        background-color: black;
-        color: #fff;  
-        border-radius: 23px; 
-        position: relative;
-        transition:all 0.1s;
-        letter-spacing: 1px;
-      }
-      .gaide-middle-button:hover{
-        font-size: .775rem !important;
-        display: block;
-        height: 39px;
-        width: 405px;
-        font-size:.95rem ;
-        opacity: 0.8;  
-        letter-spacing: normal;
-      }
-      .gaide-middle-button span{
-        color: black;
-        position: absolute;
-        right: 14px !important;
-        z-index: 2;
-      }
-      .gaide-middle-button img{
-        width: 25px;
-        position: absolute;
-        top: 8px;
-        right: 7px;
-        z-index: 1;
-      }
-      .gaide-middle-button img{
-        transform: rotate(90deg);  
-      }
-      .gaide-middle-button span{
-        transform: rotate(90deg);
-        right: 18px;
-      }
+              /*TEL-SECTION-----------------------*/
+              .tel-section{
+                margin: 50px 20px 60px;
+                padding-left:unset;
+                justify-content: space-between;
+              }
+              .tel-se-box{
+                width: 100%;
+                margin-left: unset;
+              }
+              .tel-text{
+                margin-left:unset;
+              }
+              .tel-text h3{
+                font-size: .9rem;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+              }
+              .tel-text p{
+                font-size: 1.65rem;
+                letter-spacing: .5px;
+                margin-bottom: 10px;
+              }
+              .tel-label label,
+              .tel-span span{
+                margin-bottom: 5px;
+                font-size: .75rem;
+              }
+              .tel-span{
+                margin-left: 13px;
+              }
+              .tel-span a::before{
+                content: '\A';
+                white-space: pre;
+              }
+              .tel-img{
+                display: none;
+              }
+              .r-tel-img{
+                display: block;
+                margin-top: 40px;
+                transform: scale(-1,1);
+                width: 82px !important ;
+                height: 92px;
+              }
+              /*フッター----------------------*/
+              footer{
+                height: 365px;
+                padding: 0 20px;
+              }
+              .footer-logo{
+                padding-top: 42px;  
+                margin-left:unset;
+              }
+              footer .flex{
+                flex-direction: column;
+                justify-content: unset;
+              }
+              footer img{
+                width: 186px;
+              }
+              .footer-text{
+                margin-top: 15px;
+                margin-left: unset;
+              }
+              .label-list li,
+              .co-list li{
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+              }
+              .copyright{
+                margin-top: -8px;
+              }
+              .copyright a::before{
+                content: '\A';
+                white-space: pre;
+              }
+              /*フッター　ボタン*/
+              .footer-bt-content{
+                display: none;
+              }
+              .r-footer-bt-content{
+                display: block;
+                margin-top: 20px !important;
+                margin-left: 22vw !important;      
+                padding: 0 20px;  
+              }
+              .r-footer-bt-content .button{
+                height: 41px;
+                line-height: 41px;        
+              }
+              footer .button:hover{
+                width:176px ;
+                height: 40px;
+              }
+              footer .button-img{
+                top: 9px;
+              }
+              .gaide-top{
+                display: none;
+              }
+              /*ガイドボタン　SP　ミドル*/
+              #gd-mid{
+                display: none;
+              }
+              .gaide-middle{        
+                width: 100%;
+                height: 60px;
+                background-color: #eeedea;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                position: fixed;
+                bottom: 0px;
+              }
+              .gaide-middle-button{
+                font-size: .8rem;
+                display: block;
+                cursor: pointer;
+                height: 40px;
+                width: 82vmin;
+                margin-top: 10px;
+                line-height: 40px;
+                background-color: black;
+                color: #fff;  
+                border-radius: 23px; 
+                position: relative;
+                transition:all 0.1s;
+                letter-spacing: 1px;
+              }
+              .gaide-middle-button:hover{
+                font-size: .775rem !important;
+                display: block;
+                height: 39px;
+                width: 405px;
+                font-size:.95rem ;
+                opacity: 0.8;  
+                letter-spacing: normal;
+              }
+              .gaide-middle-button span{
+                color: black;
+                position: absolute;
+                right: 14px !important;
+                z-index: 2;
+              }
+              .gaide-middle-button img{
+                width: 25px;
+                position: absolute;
+                top: 8px;
+                right: 7px;
+                z-index: 1;
+              }
+              .gaide-middle-button img{
+                transform: rotate(90deg);  
+              }
+              .gaide-middle-button span{
+                transform: rotate(90deg);
+                right: 18px;
+              }
 
-      /*ガイドボタン　アンダー*/
-      .gd-und-position{
-        position: absolute;
-        top: -32px;
-        right: 20px ;
-      }
-      .gaide-under img{
-        width: 66px;
-      }
-      .gaide-under p{
-        font-size: .8rem;
-        top: 32px;
-        left: 16px;
-      }
+              /*ガイドボタン　アンダー*/
+              .gd-und-position{
+                position: absolute;
+                top: -32px;
+                right: 20px ;
+              }
+              .gaide-under img{
+                width: 66px;
+              }
+              .gaide-under p{
+                font-size: .8rem;
+                top: 32px;
+                left: 16px;
+              }            
 
 
 
-    }/* /media */
+            }/* /media */
 
