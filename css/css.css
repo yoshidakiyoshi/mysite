@@ -68,13 +68,12 @@ a{
 .introduction{ 
   margin: 25px 10px;
 }
-.introduction p{
-  width: 360px;
-  font-size: 2.1rem;
+.introduction p{  
+  font-size: 2.25rem;
   font-weight: 700;
-  letter-spacing: .4rem;  
+  width: 360px;
+  letter-spacing: .2rem;  
   line-height: 2.65rem;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 .info{
@@ -168,8 +167,7 @@ textarea{
   margin-top: 40px;
   text-align: center;
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .button{
@@ -341,7 +339,8 @@ textarea{
 }
 
 .performance-menu img{
-  box-shadow:0 5px 5px 0 rgba(201, 188, 188, 0.637);
+  box-shadow:5px 5px 15px rgba(201, 188, 188, 0.35),
+  -5px -5px 15px rgba(201, 188, 188, 0.35);
   
 }
 .performance-menu-text{
@@ -538,7 +537,7 @@ textarea{
 /*QUESTION-----------------------------*/
 .question-section{
   margin: 0 auto;
-  
+  letter-spacing: 1px;  
 }
 .question-section h1{
   text-align: center;
@@ -589,13 +588,14 @@ textarea{
 .request-nav{
   height: 265px;
   background-color: #ff9600;
+  letter-spacing: 1px;
 }
 .request-nav .nav-icon{
   margin-top: 40px;
 }
 .nav-flex{
   display: flex;
-  margin-left: -139px;
+  margin-left: -133px;
 }
 .request-nav .nv-p-pc{
   font-size: 1.25rem;
@@ -616,16 +616,17 @@ textarea{
 .request-flow h3{
   color: #fff; 
   margin-bottom: 5px;
-  width:290px;
+  width:300px;
 }
 .request-flow p{
   font-size: 0.93rem;
+  text-align: justify;
   line-height: 1.4;
   color: #fff;
-  width: 200px;
+  width: 220px;
 }
 .item2{
-  margin-left: -15px;
+  margin-left: -20px;
 }
 .item3{
   margin-left:-3px ;
@@ -634,10 +635,10 @@ textarea{
 .item3 h3{
   width:230px ;
 }
-.r-question{
+.sp-question{
   display: none;
 }
-.r-req-nv{
+.sp-req-nv{
   display: none;
 }
 
@@ -646,6 +647,7 @@ textarea{
   text-align: center;
   margin-top: 70px;
   margin-bottom: 50px;
+  letter-spacing: 1px;
 }
 .request-content h1{
   font-size: 2.2rem;
@@ -665,8 +667,8 @@ textarea{
   font-size: .75rem;
   line-height: initial;
 }
-.r-request-p1,
-.r-request-p2{
+.sp-request-p1,
+.sp-request-p2{
   display: none;
 }
 /*リクエストコンテンツ　コンタクト部分*/
@@ -688,8 +690,7 @@ textarea{
   width:600px ;
   height: 240px;
   margin-left: 225px;
-  flex-direction: row;
-  
+  flex-direction: row;  
 }
 .request-content textarea{
   width: 430px;
@@ -708,7 +709,6 @@ textarea{
   width:600px ;
   margin-left: -50px;
   display: flex;
-  border: 1px solid #008bbb;
 }
 .tel-section img{
   width: 125px;
@@ -749,7 +749,7 @@ textarea{
 /*フッター----------------------*/
 
 footer{
-  height: 270px;
+  height: 260px;
   background:#eeedea ; 
   position: relative;
 }
@@ -808,7 +808,9 @@ footer .button{
   color: #000;
   font-weight: normal;
   background-color: #fff;
-  box-shadow:0 5px 5px 0 rgba(0,0,0,.2)
+  box-shadow:
+  1px 3px 5px rgba(0,0,0,0.2),
+  -1px -3px 5px rgba(0,0,0,0.2)
 }
 footer .button:hover{
   width:176px ;
@@ -939,6 +941,7 @@ footer .button-img{
               /*ヘッダー---------------------*/
 
               .headerLeft{
+                min-width: 480px;
                 margin-left: -10px;
                 padding-top: 10px;
                 padding-right: 10px;
@@ -946,7 +949,7 @@ footer .button-img{
                 display: flex;
               }
               .subTitle{
-                width: 45vw;
+                width: 47vw;
                 font-size: 3.2vw;
                 letter-spacing: 1px;
                 line-height: 1.1;
@@ -1033,7 +1036,7 @@ footer .button-img{
               }
               .question_info{
                 width: 100%;
-                height: 190px;
+                height: 182px !important;
                 margin-top: -10px;
               }
               .question_info label{
@@ -1044,7 +1047,7 @@ footer .button-img{
                 max-width: none;
                 min-width: none;
               }
-              /*fromボタン*/
+              /*formボタン*/
               .button-content{
                 width: 100%;
                 height: 50px;
@@ -1053,15 +1056,17 @@ footer .button-img{
               }
               .button{        
                 font-size: 0.8rem;        
-                width: 363px;
-                height: 40px;
+                width: 100%;
+                height: 40px;                
+                margin: 0 10vmin;
                 line-height: 40px;        
                 font-weight: normal;
               }
               .button:hover{
-                font-size: 0.775rem;
-                width: 352px;
+                font-size: 0.785rem;
+                width: 100%;
                 height: 39px;
+                margin: 0 11vmin;
                 line-height: 39px;
               }
               .button span{
@@ -1272,6 +1277,8 @@ footer .button-img{
               .r-pf-menu-text img{
                 width: 38vw;
                 height: 32vmin;
+                box-shadow:5px 5px 15px rgba(201, 188, 188, 0.35),
+                -5px -5px 15px rgba(201, 188, 188, 0.35);
               }
               .r-pf-list-box{
                 margin-left: 20px;
@@ -1359,35 +1366,35 @@ footer .button-img{
               #container{
                 display: none;
               }
-              .r-question{
+              .sp-question{
                 display: block;
                 margin-top: 20px;
                 padding: 0 20px;
               }
-              .r-question-menu{        
+              .sp-question-menu{        
                 margin-bottom: 30px;
               }
-              .r-q-flex{
+              .sp-q-flex{
                 display: flex;
               }
-              .r-q-flex h2{
+              .sp-q-flex h2{
                 font-size: .95rem;
                 margin-top: 3px;
               }
-              .r-q-text{
+              .sp-q-text{
                 background: #eeedea;
                 padding: 22px 20px;
               }
-              .r-q-text h3{
+              .sp-q-text h3{
                 font-size: .95rem;
               }
-              .r-q-text p{
+              .sp-q-text p{
                 font-size: .8rem;
                 margin-top: 8px;
               }
-              .r-q-flex h2,
-              .r-q-text h3,
-              .r-q-text p{
+              .sp-q-flex h2,
+              .sp-q-text h3,
+              .sp-q-text p{
                 letter-spacing: 1px;
               }
               /*request-nav -----------------------------*/
@@ -1398,34 +1405,35 @@ footer .button-img{
                 height: 398px;
                 border-top: 10px solid #eeedea;
               }
-              .r-req-nv{
+              .sp-req-nv{
                 display: block;        
                 letter-spacing: 1.1px;
               }
-              .r-req-nv h2{
+              .sp-req-nv h2{
                 color: #fff;
                 margin-top: 35px;
                 text-align: center;
               }
-              .r-req-flex{
+              .sp-req-flex{
                 display: flex;
                 margin: 10px 20px 0;
               }
-              .r-req-text{
+              .sp-req-text{
                 color: #fff;
                 margin: 8px 0 27px;
               }
-              .r-req-text h3{
+              .sp-req-text h3{
                 font-size: .95rem;
                 margin-bottom: 4px;
               }
-              .r-req-text p{
+              .sp-req-text p{
                 font-size: .8rem;
                 line-height: 1.35;
               }
               /*お問い合わせ----------------------*/
               .request-content{
                 margin-top: 40px;
+                margin-bottom:30px ;
               }
               .request-content h1{
                 font-size: 1.45rem;
@@ -1438,12 +1446,19 @@ footer .button-img{
               .request-p2{
                 display: none;
               }
-              .r-request-p1,
-              .r-request-p2{
+              .sp-request-p1,
+              .sp-request-p2{
                 display: block;
-                font-size: .8rem;
                 margin-bottom: 25px;
+                padding: 0 35px;
               }
+              .sp-request-p1{
+                font-size: 0.8rem;
+              }
+              .sp-request-p2{
+                font-size: 0.75rem;
+              }
+              
               /*リクエストコンテンツ　コンタクト部分*/
               .request-content .contact_info,
               .request-content .question_info{
@@ -1460,13 +1475,13 @@ footer .button-img{
 
               /*TEL-SECTION-----------------------*/
               .tel-section{
-                margin: 50px 20px 60px;
+                margin: 50px 20px 55px;
                 padding-left:unset;
-                justify-content: space-between;
               }
               .tel-se-box{
                 width: 100%;
-                margin-left: unset;
+                margin-left: unset;                
+                justify-content: space-between;
               }
               .tel-text{
                 margin-left:unset;
@@ -1498,10 +1513,11 @@ footer .button-img{
               }
               .r-tel-img{
                 display: block;
+                width: 84px !important ;
+                height: 92px;
                 margin-top: 40px;
                 transform: scale(-1,1);
-                width: 82px !important ;
-                height: 92px;
+
               }
               /*フッター----------------------*/
               footer{
@@ -1559,6 +1575,7 @@ footer .button-img{
               .gaide-top{
                 display: none;
               }
+              /*ガイドボタン----------------------*/
               /*ガイドボタン　SP　ミドル*/
               #gd-mid{
                 display: none;

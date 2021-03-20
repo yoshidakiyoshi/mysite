@@ -41,7 +41,7 @@ $(function(){
 
       /*クリック*/    
       gd_top.click(function(){
-      $('html').animate({scrollTop:6292});
+      $('html').animate({scrollTop:6299});
       });
 
 
